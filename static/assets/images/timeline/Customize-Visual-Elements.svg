@@ -1,0 +1,27 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_38_2458" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="6" width="34" height="36">
+<mask id="mask1_38_2458" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="6" y="6" width="36" height="36">
+<path d="M6 6H42V42H6V6Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_38_2458)">
+<path d="M17.1328 40.1562L36.5593 28.9404C39.2497 27.3871 40.1715 23.9469 38.6181 21.2565C37.6826 19.6359 36.0622 18.6583 34.3336 18.4755" stroke="#48E6C7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.6094 38.8848L33.0297 21.6994C35.0265 19.3195 34.7161 15.7716 32.3363 13.7747C30.9036 12.5724 29.0476 12.2078 27.3615 12.6263" stroke="#48E6C7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.55 37.2285L27.2406 16.0988C28.3031 13.1797 26.7979 9.95177 23.8786 8.88927C22.1472 8.25906 20.3073 8.53223 18.875 9.4678" stroke="#48E6C7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.63281 35.3203V12.6797C8.63281 9.57307 11.1512 7.05469 14.2578 7.05469C17.3644 7.05469 19.8828 9.57307 19.8828 12.6797V35.3203C19.8828 38.4269 17.3644 40.9453 14.2578 40.9453C11.1512 40.9453 8.63281 38.4269 8.63281 35.3203Z" stroke="#48E6C7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.63281 12.8203H19.8828" stroke="#48E6C7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.63281 18.4453H19.8828" stroke="#48E6C7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.63281 29.6953H19.8828" stroke="#48E6C7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.63281 24.0703H19.8828" stroke="#48E6C7" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.2031 35.3203C13.2031 34.7378 13.6753 34.2656 14.2578 34.2656C14.8403 34.2656 15.3125 34.7378 15.3125 35.3203C15.3125 35.9028 14.8403 36.375 14.2578 36.375C13.6753 36.375 13.2031 35.9028 13.2031 35.3203Z" fill="#48E6C7"/>
+</g>
+</mask>
+<g mask="url(#mask0_38_2458)">
+<rect x="2" y="3" width="44" height="41" fill="url(#paint0_linear_38_2458)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_38_2458" x1="50.5557" y1="13.1134" x2="-1.37562" y2="36.5063" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4AF2C8"/>
+<stop offset="1" stop-color="#2F4CB3"/>
+</linearGradient>
+</defs>
+</svg>

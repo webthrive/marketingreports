@@ -1,0 +1,94 @@
+<footer class="pt-16 pb-8 border-t border-[#FFFFFF29]">
+   <div class="container">
+       <div class="flex justify-between lg:flex-row flex-col border-b border-[#FFFFFF29] pb-12 gap-6">
+           <div class="w-1/5">
+               <img src="{{ .Site.Params.siteLogo | relURL }}" alt="{{ .Site.Title }} logo">
+               <ul class="flex gap-2 mt-8">
+                    {{ range .Site.Params.Footer.social_links }}   
+                        <li class="h-9 w-9 min-w-9 rounded-full p-2 border border-[#858B9833] flex items-center justify-center">
+                            <a href="{{ .link }}">
+                                <img src="{{ .icon | relURL }}" alt="{{ .alt }}">
+                            </a>
+                        </li>
+                    {{ end }}
+               </ul>
+           </div>
+           <div class="lg:w-3/4 w-full flex md:flex-row flex-col justify-between gap-6">
+               <div class="lg:w-1/5 md:w-2/4 w-full">
+                {{ with .Site.Params.Footer.footer_widget_1 }}
+                    <h3 class="font-Inter text-base font-bold text-white mb-5">
+                        {{ .section_name }}
+                    </h3>
+                    <ul class="font-Inter text-sm font-normal text-[#BFC1C9] space-y-5">
+                        {{ range .items }}
+                        <li>
+                            <a href="{{ .url }}" class="hover:text-neutral-300 text-nowrap">
+                            {{ .name }}
+                            </a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                {{ end }}
+               </div>
+               <div class="lg:w-1/5 md:w-2/4 w-full">
+                    {{ with .Site.Params.Footer.footer_widget_2 }}
+                        <h3 class="font-Inter text-base font-bold text-white mb-5">
+                            {{ .section_name }}
+                        </h3>
+                        <ul class="font-Inter text-sm font-normal text-[#BFC1C9] space-y-5">
+                            {{ range .items }}
+                                <li>
+                                    <a href="{{ .url }}" class="hover:text-neutral-300 ">
+                                        {{ .name }}
+                                    </a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                   {{ end }}
+               </div>
+               <div class="lg:w-1/5 md:w-2/4 w-full">
+                    {{ with .Site.Params.Footer.footer_widget_3 }}
+                        <h3 class="font-Inter text-base font-bold text-white mb-5">
+                            {{ .section_name }}
+                        </h3>
+                        <ul class="font-Inter text-sm font-normal text-[#BFC1C9] space-y-5">
+                            {{ range .items }}
+                                <li>
+                                    <a href="{{ .url }}" class="hover:text-neutral-300 ">
+                                        {{ .name }}
+                                    </a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    {{ end }}
+               </div>
+               <div class="lg:w-1/5 md:w-2/4 w-full">
+                    {{ with .Site.Params.Footer.footer_widget_4 }}
+                        <h3 class="font-Inter text-base font-bold text-white mb-5">
+                            {{ .section_name }}
+                        </h3>
+                        <ul class="font-Inter text-sm font-normal text-[#BFC1C9] space-y-5">
+                                {{ range .items }}
+                                    <li>
+                                        <a href="{{ .url }}" class="hover:text-neutral-300 ">
+                                            {{ .name }}
+                                        </a>
+                                    </li>
+                                {{ end }}
+                        </ul>
+                    {{ end }}
+               </div>
+           </div>
+       </div>
+       <div class="flex lg:flex-row flex-col gap-4 lg:justify-between justify-center items-center pt-8">
+           <p class="font-Inter text-sm font-normal text-[#BFC1C9]">
+                {{ .Site.Params.Footer.copyright }}
+           </p>
+           <ul class="flex gap-5 font-Inter text-sm font-normal text-[#BFC1C9]">
+                {{ range .Site.Menus.secondary_menu }}
+                    <li><a href="{{ .URL }}" class="hover:text-neutral-300">{{ .Name }}</a></li>
+                {{ end }}
+           </ul>
+       </div>
+   </div>
+</footer>

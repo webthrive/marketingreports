@@ -1,0 +1,340 @@
+{{ define "main" }}
+
+    <!--  Being  Dashboard Header Start -->
+    <div class="container lg:pt-14 pt-7">
+        <div class="lg:text-center max-w-[1080px] mx-auto lg:mb-8 mb-0">
+            <h2 class="font-obviously font-medium lg:text-4xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
+                {{ .Params.hero_banner.title }}
+            </h2>
+            <p class="flex flex-col lg:text-base text-sm leading-6 text-[#BFC1C9] font-Inter font-medium">
+                {{ .Params.hero_banner.text }}
+            </p>
+            <div class="flex justify-center lg:mt-10 mt-5">
+                <div class="flex items-center justify-start">
+
+                    <div
+                        class="lg:min-h-[60px] lg:max-h-[60px] lg:min-w-[60px] lg:max-w-[60px] max-h-[60px] min-w-[60px] rounded-full overflow-hidden flex items-center justify-center border-2 border-white">
+                        <img src="{{ .Params.hero_banner.user.img | relURL }}" class="w-full h-auto max-w-[60px]" alt="{{ .Params.hero_banner.user.name }}">
+                    </div>
+
+                    <div class="flex flex-col items-start ms-[15px]">
+                        <p class="font-Inter text-base text-white font-bold">
+                            {{ .Params.hero_banner.user.name }}
+                        </p>
+                        <p class="font-Inter text-sm text-white font-medium flex justify-center items-center">
+                            15 min read
+                            <span class="h-1 w-1 bg-white mx-2 inline-block rounded-full"></span>{{ .Params.hero_banner.user.date }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  Being  Hero Start -->
+        <img src="{{ .Params.hero_banner.big_image | relURL }}" class="w-full h-auto" alt="Main Content">
+        <!--  Being  Hero End -->
+    </div>
+    <!--  Being  Dashboard Header End -->
+</div>
+
+
+<!--  Being  Tags Start -->
+<div class="container">
+    <div class="border border-[#FFFFFF29] rounded-[20px] lg:p-10 p-6 lg:space-y-10 space-y-5">
+        {{ range .Params.Tags.list }}
+            <div>
+                <h3 class="font-Inter text-xl font-bold text-white mb-6">{{ .title }}</h3>
+                <ul class="font-Inter text-base text-white font-normal flex flex-wrap gap-2">
+                    {{ range .keywords }}
+                        <li class="bg-[#2C2C2C4D] px-3 py-[14px] rounded-xl">{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+        {{ end }}
+    </div>
+</div>
+<!--  Being  Tags End -->
+
+
+<!--  Being  What Marketing Start -->
+<div class="lg:pt-24 pt-12">
+    <div class="container">
+        <div class="lg:text-center max-w-[1080px] mx-auto mb-8">
+            <h2 class="font-obviously font-medium lg:text-4xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
+                {{ .Params.Services.title }}    
+            </h2>
+            <p class="flex flex-col lg:text-base text-sm leading-6 text-[#BFC1C9] font-Inter font-medium">
+                {{ .Params.Services.subTitle }}
+            </p>
+        </div>
+
+        <div class="grid grid-cols-12 gap-5">
+            {{ range .Params.Services.cards }}
+                <div class="lg:col-span-3 col-span-12">
+                    <div class="border border-[#FFFFFF29] p-6 rounded-[20px] bg-[#0C0F19] h-full">
+                        <img src="{{ .img | relURL }}"
+                            class="mb-8 lg:h-[60px] lg:w-[60px] h-[45px] w-[45px]" alt="{{ .title }}">
+                        <h3 class="font-Inter font-bold text-[18px] leading-7 text-white mb-4">
+                            {{ .title }}
+                        </h3>
+                        <p class="text-base leading-6 text-[#BFC1C9] font-Inter font-normal">
+                            {{ .text }}
+                        </p>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+<!--  Being  What Marketing End -->
+
+
+<!--  Being  Why Use Start -->
+<div class="bg-[url('images/bg/GradientBlur.webp')] bg-no-repeat py-80 bg-center bg-cover -mt-80">
+    <div class="container lg:pt-14 pt-7">
+        <div class="lg:text-center max-w-[800px] mx-auto mb-8">
+            <h2 class="font-obviously font-medium lg:text-3xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
+                {{ .Params.Benefits.title }}        
+            </h2>
+            <p class="flex flex-col lg:text-base text-sm leading-6 text-[#BFC1C9] font-Inter font-medium">
+                {{ .Params.Benefits.subTitle }}     
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="lg:pb-24 pb-12 -mt-80">
+    <div class="container">
+        <div class="grid grid-cols-12 gap-x-5 gap-y-10">
+            {{ range .Params.Benefits.cards }}
+                <div class="lg:col-span-4 col-span-12">
+                    <div class="rounded-[10px] bg-[#0C0F19] mb-8 overflow-hidden">
+                        <img src="{{ .img | relURL }}" class="w-full"
+                            alt="{{ .title }}">
+                    </div>
+                    <h3 class="font-Inter font-bold text-[18px] leading-7 text-white mb-3">{{ .title }}</h3>
+                    <p class="text-base leading-6 text-[#BFC1C9] font-Inter font-normal">{{ .text }}</p>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+<!--  Being  Why Use End -->
+
+<hr class="border-t border-[#FFFFFF29]">
+
+<!--  Being Marketing Types Start -->
+
+<div class="lg:pt-24 pt-12 pb-[60rem] bg-[url('images/bg/GradientBlur.webp')] bg-no-repeat bg-bottom bg-cover">
+    <div class="container">
+        <div class="lg:text-center max-w-[1080px] mx-auto mb-8">
+            <h2 class="font-obviously font-medium lg:text-4xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
+                {{ .Params.Types.title }}      
+            </h2>
+            <p class="flex flex-col lg:text-base text-sm leading-6 text-[#BFC1C9] font-Inter font-medium">
+                {{ .Params.Types.subTitle }}  
+            </p>
+        </div>
+        <div class="grid grid-cols-12 gap-5">
+            {{ range $index, $card := .Params.Types.cards }}
+                <div class="{{ if lt $index 2 }}lg:col-span-6{{ else }}lg:col-span-4{{ end }} col-span-12">
+                    <div class="border-l-2 border-[#FFFFFF29] p-6 rounded-[16px] bg-[#0C0F19] h-full">
+                        <img src='{{ "assets/images/logos/integration.svg" | relURL }}'
+                            class="mb-8 lg:h-[50px] lg:w-[50px] h-[45px] w-[45px]" alt="integration-tick">
+                        <h3 class="font-Inter font-bold text-[18px] leading-7 text-white mb-5">{{ $card.title }}</h3>
+                        <ul class="text-base text-[#BFC1C9] font-Inter font-normal space-y-2">
+                            {{ range $card.content }}
+                            <li class="ps-5 pe-2 relative mb-4 before:content-[' '] before:block before:absolute before:left-0 before:w-[6px] before:h-[6px] before:top-2 before:bg-white before:rounded-full">
+                                <p>
+                                    <span class="font-bold">{{ .bold_text }}</span>
+                                    {{ .text }}
+                                </p>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+<!--  Being Marketing Types End -->
+
+<div class="px-4 -mt-[60rem]">
+    <img src="{{ .Params.Types.image | relURL }}" class="w-full h-auto" alt="Dashboard View">
+</div>
+
+<hr class="border-b border-[#FFFFFF29]">
+<div class="bg-[url('images/bg/GradientBlur.webp')] bg-no-repeat py-80 bg-center bg-cover -mt-80">
+    <div class="container lg:pt-14 pt-7">
+        <div class="lg:text-center max-w-[768px] mx-auto mb-8">
+            <h2 class="font-obviously font-medium lg:text-3xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
+                {{ .Params.Timeline.title }}    
+            </h2>
+            <p class="flex flex-col lg:text-base text-sm leading-6 text-[#BFC1C9] font-Inter font-medium mb-3">
+                {{ .Params.Timeline.subTitle1 }}
+            </p>
+            <p class="flex flex-col lg:text-base text-sm leading-6 text-[#BFC1C9] font-Inter font-medium">
+                {{ .Params.Timeline.subTitle2 }}
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container mx-auto w-full h-full -mt-80">
+    <div class="relative wrap overflow-hidden lg:p-10 p-0 h-full">
+        <div class="border-2-2 absolute border-opacity-20 border-gray-200 h-full border left-2/4 lg:block hidden"></div>
+
+        {{ range $index, $card := .Params.Timeline.cards }}
+            {{ if eq (mod $index 2) 0 }}
+                <!-- left timeline -->
+                <div class="flex justify-between items-center w-full left-timeline lg:mb-0 mb-4">
+                    <div class="lg:w-[47%] w-full">
+                        <div class="border border-[#FFFFFF29] p-6 rounded-[20px] bg-[#0C0F19]">
+                            <div class="flex items-center mb-4">
+                                <img src="{{ $card.img | relURL }}"
+                                    class="lg:h-[48px] lg:w-[48px] h-[45px] w-[45px] me-3"
+                                    alt="{{ $card.title }}">
+                                <h3 class="font-Inter font-semibold text-[18px] leading-7 text-white">
+                                    {{ $card.title }}
+                                </h3>
+                            </div>
+                            <p class="text-base leading-6 text-[#BFC1C9] font-Inter font-normal">
+                                {{ $card.text }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="z-20 lg:block hidden">
+                        <img src='{{"assets/images/dot.svg" | relURL }}' alt="dot">
+                    </div>
+                    <div class="w-[47%] lg:block hidden"></div>
+                </div>
+
+            {{ else }}
+                <!-- right timeline -->
+                <div class="flex justify-between items-center w-full left-timeline lg:mb-0 mb-4">
+                    <div class="w-[47%] lg:block hidden"></div>
+                    <div class="z-20 lg:block hidden">
+                        <img src='{{"assets/images/dot.svg" | relURL }}' alt="dot">
+                    </div>
+                    <div class="lg:w-[47%] w-full">
+                        <div class="border border-[#FFFFFF29] p-6 rounded-[20px] bg-[#0C0F19]">
+                            <div class="flex items-center mb-4">
+                                <img src="{{ $card.img | relURL }}"
+                                    class="lg:h-[48px] lg:w-[48px] h-[45px] w-[45px] me-3"
+                                    alt="{{ $card.title }}">
+                                <h3 class="font-Inter font-semibold text-[18px] leading-7 text-white">
+                                    {{ $card.title }}
+                                </h3>
+                            </div>
+                            <p class="text-base leading-6 text-[#BFC1C9] font-Inter font-normal">
+                                {{ $card.text }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>
+
+
+<!--  Being  Data Driven Start -->
+
+<div class="lg:pt-24 py-12 bg-[url('images/bg/GradientBlur.webp')] bg-no-repeat shadow-bg -mt-80">
+    <div class="bg-[url('images/bg/GradientBlur.webp')] bg-no-repeat bg-cover py-80 bg-center">
+        <div class="container border-t border-[#FFFFFF29] pt-14">
+            <div class="lg:text-center max-w-[1080px] mx-auto mb-8">
+                <h2 class="font-obviously font-medium lg:text-4xl text-3xl text-ThemeWhite lg:leading-[56px] leading-10 mb-5">
+                    {{ .Params.Why_Choose.title }}        
+                </h2>
+                <p class="flex flex-col lg:text-base text-sm leading-6 text-[#BFC1C9] font-Inter font-medium">
+                    {{ .Params.Why_Choose.subTitle }}      
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container -mt-80">
+        <div class="grid grid-cols-12 gap-x-5 gap-y-8">
+
+            {{ range .Params.Why_Choose.cards }}
+                <div class="lg:col-span-3 col-span-12">
+                    <div class="border-l border-[#FFFFFF29] px-5 h-full">
+                        <img src="{{ .img | relURL }}"
+                            class="mb-4 lg:h-[48px] lg:w-[48px] h-[45px] w-[45px]" alt="{{ .title }}">
+                        <h3 class="font-Inter font-bold text-[18px] leading-7 text-white mb-2">
+                            {{ .title }}
+                        </h3>
+                        <p class="text-base leading-6 text-[#BFC1C9] font-Inter font-normal">
+                            {{ .text }}
+                        </p>
+                    </div>
+                </div>
+            {{ end }}
+
+            <div class="lg:col-span-6 col-span-12">
+                <img src="{{ .Params.Why_Choose.image | relURL }}" class="w-full h-auto" alt="{{ .Params.Why_Choose.title }}">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--  Being  Data Driven End -->
+
+
+
+<!--  Being  Factors Start -->
+<div class="lg:pb-24">
+    <div class="container">
+        <div class="grid grid-cols-12 gap-5 mb-8">
+            <div class="lg:col-span-5 col-span-12">
+                <h2 class="font-obviously font-normal lg:text-2xl text-3xl text-white">
+                    {{ .Params.Additional_Factors.title }}  
+                </h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-12 gap-5">
+            {{ range .Params.Additional_Factors.cards }}
+                <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#FFFFFF29] p-6 rounded-[16px] bg-[#0C0F19] h-full">
+                        <img src=' {{"assets/images/logos/integration.svg" | relURL }}'
+                            class="mb-8 lg:h-[50px] lg:w-[50px] h-[45px] w-[45px]" alt="integration-tick">
+                        <h3 class="font-Inter font-bold text-[18px] leading-7 text-white mb-4">{{ .title }}</h3>
+                        <p class="text-base leading-6 text-[#BFC1C9] font-Inter font-normal">{{ .text }}</p>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+<!--  Being  Factors End -->
+
+
+<!--  Being  Contact Form Start -->
+<div class="container mb-7 lg:mt-0 mt-5">
+    <div
+        class="bg-[url('images/bg/form-bg.webp')] bg-no-repeat bg-cover rounded-2xl lg:py-44 py-20  flex justify-center">
+        <div class="w-full max-w-[740px] px-4 text-center">
+            <h2 class="font-obviously font-medium lg:text-[32px] text-3xl text-white lg:leading-[56px] leading-10 mb-4">
+                {{ .Params.Contact.title }}      
+            </h2>
+            <p class="flex flex-col lg:text-base text-sm leading-6 text-white font-Inter font-normal mb-6">
+                {{ .Params.Contact.content }}  
+            </p>
+            <a href="{{ .Params.Contact.button_link }}"
+                class="text-white bg-white px-5 py-[14px] font-semibold text-[14px] rounded-[10px] border-2 border-white border-opacity-15 flex justify-center items-center max-w-fit mx-auto">
+                <span class="bg-gradient-to-r from-[#3245FF] to-[#B845ED] bg-clip-text text-transparent me-2">
+                    {{ .Params.Contact.button_text }}  
+                </span>
+                <img src='{{"assets/images/logos/arrow-to-right.svg" | relURL }}' alt="arrow to right">
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Being Contact Form End -->
+
+
+{{ end }}

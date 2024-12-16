@@ -1,0 +1,46 @@
+
+
+<div class="bg-no-repeat bg-cover bg-center" style="background-image: url({{.Params.background | relURL }});">
+   <!-----Being Header Border----->
+   <div class="border-b border-[#FFFFFF29]">
+       <div class="container">
+           <!-----Being Header Start----->
+           <header class="py-4">
+               <div class="flex justify-between items-center">
+                    <a href="{{ .Site.BaseURL }}">
+                        <img src="{{ .Site.Params.siteLogo | relURL }}" alt="{{ .Site.Title }} logo">
+                    </a>
+                   <nav class="nav-list" id="toggle-menu">
+                       <ul class="flex lg:flex-row flex-col lg:items-center text-white font-semibold text-[14px] font-Inter">
+                        {{ range .Site.Menus.main_menu }}
+                            <li><a href="{{ .URL }}" class="px-5 py-[14px] lg:inline-block block hover:text-neutral-300">{{ .Name }}</a></li>
+                        {{ end }}
+                       </ul>
+                   </nav>
+
+                   {{ if .Site.Params.Header.menu_right_buttons }}
+                        <div class="lg:flex hidden items-center lg:mx-0 my-3 mx-4" id="interest-button">
+                            <a href="{{ .Site.Params.Header.menu_button_link_left }}"
+                                class="text-white px-5 py-[14px] font-semibold text-[14px] rounded-[10px] border-2 border-white border-opacity-15 flex justify-center items-center lg:me-3 me-0 lg:mb-0 mb-3">
+                                <img src='{{ "assets/images/logos/users-icon.svg" | relURL }}' alt="users-icon"> <span
+                                    class="ms-2">{{ .Site.Params.Header.menu_button_text_left }}</span>
+                            </a>
+                            <a href="{{ .Site.Params.Header.menu_button_link_right }}"
+                                class="text-white bg-white px-5 py-[14px] font-semibold text-[14px] rounded-[10px] border-2 border-white border-opacity-15 flex justify-center items-center">
+                                <span
+                                    class="bg-gradient-to-r from-[#3245FF] to-[#B845ED] bg-clip-text text-transparent me-2">{{ .Site.Params.Header.menu_button_text_right }}</span>
+                                <img src='{{ "assets/images/logos/arrow-to-right.svg" | relURL }}' alt="users-icon">
+                            </a>
+                        </div>
+                    {{ end }}
+
+                   <div id="mobile-menu" class="lg:hidden block">
+                       <span><img src='{{"assets/images/menu.svg" | relURL }}' alt="menu-icon" class="menu-icon open image-nav"></span>
+                       <span><img src='{{ "assets/images/cross.svg" | relURL }}' alt="close-icon" class="menu-icon close image-nav"></span>
+                   </div>
+               </div>
+           </header>
+           <!-----Being Header End----->
+       </div>
+   </div>
+

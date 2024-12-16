@@ -1,0 +1,96 @@
+baseURL: 'https://rizi97.github.io/hugo-marketing-reports/'
+languageCode: 'en'
+title: 'Marketing Reports'
+
+outputs:
+  home:
+    - "HTML"
+    - "CSS"
+
+menu:
+  main_menu:
+    - name: 'Marketing Dashboard'
+      url: '/dashboard'
+      weight: '1'
+    - name: 'Integrations'
+      url: '#!'
+      weight: '2'
+    - name: 'Blog'
+      url: '#!'
+      weight: '3'
+
+
+  secondary_menu:
+    - name: 'Terms & Conditions'
+      url: '/terms'
+      weight: '1'
+    - name: 'Privacy Policy'
+      url: '/privacy'
+      weight: '2'
+
+
+Params:
+  siteLogo: "assets/images/logos/site-logo.svg"
+
+  Header:
+    menu_right_buttons: true
+    menu_button_text_left: "Sign In"
+    menu_button_link_left: "sign-in"
+    menu_button_text_right: "Get Started"
+    menu_button_link_right: "sing-up"
+
+  Footer:
+    social_links:
+      - icon: assets/images/logos/SocialMedia/facebook.svg
+        link: 
+        alt: facebook icon
+      - icon: assets/images/logos/SocialMedia/pinterest.svg
+        link: 
+        alt: pinterest icon
+      - icon: assets/images/logos/SocialMedia/x.svg
+        link: 
+        alt: twitter icon
+      - icon: assets/images/logos/SocialMedia/youtube.svg
+        link: youtube.com
+        alt: youtube icon
+
+
+    footer_widget_1:
+      section_name: 'Browse'
+      items:
+        - name: 'Marketing Dashboards'
+          url: '/'
+          weight: '1'
+        - name: 'Marketing Dashboards'
+          url: '/Marketing-Dashboards'
+          weight: '2'
+
+    footer_widget_2:
+      section_name: Learn
+      items:
+        - name: 'Blog'
+          url: '/'
+          weight: '1'
+
+    footer_widget_3:
+      section_name: Support
+      items:
+        - name: 'Support'
+          url: '/'
+          weight: '1'
+        - name: 'FAQs'
+          url: '/FAQs'
+          weight: '2'
+
+    footer_widget_4:
+      section_name: Company
+      items:
+        - name: 'Our Story'
+          url: '/our-story'
+          weight: '1'
+        - name: 'Contact'
+          url: '/contact'
+          weight: '2'
+
+
+    copyright: "Company Web Thrive, LLC. All rights reserved."

@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'Inter';
+    src: url('/hugo-marketing-reports/assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100, 900;
+}
+
+@font-face {
+    font-family: 'Obviously';
+    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Obviously';
+    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Lght.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Obviously';
+    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Regu.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Obviously';
+    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Semi.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Obviously';
+    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Medi.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Obviously';
+    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Obviously';
+    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-ExtdSupr.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Obviously';
+    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-ExtdBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Obviously';
+    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ---------- Font Family Start ---------- */
+
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-100-normal.ttf') format('ttf');
+    font-weight: 100; /* Thin */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-200-normal.ttf') format('ttf');
+    font-weight: 200; /* Extra Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-300-normal.ttf') format('ttf');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-400-normal.ttf') format('ttf');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-500-normal.ttf') format('ttf');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-600-normal.ttf') format('ttf');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-700-normal.ttf') format('ttf');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-800-normal.ttf') format('ttf');
+    font-weight: 800; /* Extra Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-900-normal.ttf') format('ttf');
+    font-weight: 900; /* Extra Bold */
+    font-style: normal;
+}
+
+
+.shadow-bg {
+    background-position-y: bottom;
+    background-position-x: right;
+    background-size: 60% 40%;
+}
+/* ---------- Font Family Start ---------- */
+
+@media only screen and (max-width: 1024px) {
+    .menu-icon.close {
+        display: none;
+    }
+
+    .menu-active .menu-icon.close {
+        display: block;
+    }
+
+    .menu-active .menu-icon.open {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: block;
+    }
+
+    .nav-list {
+        @apply bg-black absolute top-16 left-0 w-full flex-col transition opacity-0 overflow-y-auto z-50 py-2;
+        height: calc(100vh - 64px);
+        transform: translate(-100%, 0);
+        transition: 0.3s ease-in-out;
+    }
+    .nav-list.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+
+    .shadow-bg {
+        background-size: 100% 8%;
+    }
+}
