@@ -3,13 +3,13 @@
 @tailwind utilities;
 @font-face {
     font-family: 'Inter';
-    src: url('/hugo-marketing-reports/assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    src: url('/marketingreports/assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
     font-weight: 100, 900;
 }
 
 @font-face {
     font-family: 'Obviously';
-    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Thin.ttf') format('truetype');
+    src: url('/marketingreports/assets/fonts/Obviously/Obviously-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: 'Obviously';
-    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Lght.ttf') format('truetype');
+    src: url('/marketingreports/assets/fonts/Obviously/Obviously-Lght.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: 'Obviously';
-    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Regu.ttf') format('truetype');
+    src: url('/marketingreports/assets/fonts/Obviously/Obviously-Regu.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
     font-family: 'Obviously';
-    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Semi.ttf') format('truetype');
+    src: url('/marketingreports/assets/fonts/Obviously/Obviously-Semi.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -41,7 +41,7 @@
 
 @font-face {
     font-family: 'Obviously';
-    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Medi.ttf') format('truetype');
+    src: url('/marketingreports/assets/fonts/Obviously/Obviously-Medi.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -49,7 +49,7 @@
 
 @font-face {
     font-family: 'Obviously';
-    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Bold.ttf') format('truetype');
+    src: url('/marketingreports/assets/fonts/Obviously/Obviously-Bold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -58,7 +58,7 @@
 
 @font-face {
     font-family: 'Obviously';
-    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-ExtdSupr.ttf') format('truetype');
+    src: url('/marketingreports/assets/fonts/Obviously/Obviously-ExtdSupr.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -67,7 +67,7 @@
 
 @font-face {
     font-family: 'Obviously';
-    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-ExtdBold.ttf') format('truetype');
+    src: url('/marketingreports/assets/fonts/Obviously/Obviously-ExtdBold.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -76,7 +76,7 @@
 
 @font-face {
     font-family: 'Obviously';
-    src: url('/hugo-marketing-reports/assets/fonts/Obviously/Obviously-Thin.ttf') format('truetype');
+    src: url('/marketingreports/assets/fonts/Obviously/Obviously-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -88,63 +88,63 @@
 
 @font-face {
     font-family: 'Urbanist';
-    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-100-normal.ttf') format('ttf');
+    src: url('/marketingreports/assets/fonts/urbanist/urbanist-latin-100-normal.ttf') format('ttf');
     font-weight: 100; /* Thin */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-200-normal.ttf') format('ttf');
+    src: url('/marketingreports/assets/fonts/urbanist/urbanist-latin-200-normal.ttf') format('ttf');
     font-weight: 200; /* Extra Light */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-300-normal.ttf') format('ttf');
+    src: url('/marketingreports/assets/fonts/urbanist/urbanist-latin-300-normal.ttf') format('ttf');
     font-weight: 300; /* Light */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-400-normal.ttf') format('ttf');
+    src: url('/marketingreports/assets/fonts/urbanist/urbanist-latin-400-normal.ttf') format('ttf');
     font-weight: 400; /* Regular */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-500-normal.ttf') format('ttf');
+    src: url('/marketingreports/assets/fonts/urbanist/urbanist-latin-500-normal.ttf') format('ttf');
     font-weight: 500; /* Medium */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-600-normal.ttf') format('ttf');
+    src: url('/marketingreports/assets/fonts/urbanist/urbanist-latin-600-normal.ttf') format('ttf');
     font-weight: 600; /* SemiBold */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-700-normal.ttf') format('ttf');
+    src: url('/marketingreports/assets/fonts/urbanist/urbanist-latin-700-normal.ttf') format('ttf'); 
     font-weight: 700; /* Bold */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-800-normal.ttf') format('ttf');
+    src: url('/marketingreports/assets/fonts/urbanist/urbanist-latin-800-normal.ttf') format('ttf');
     font-weight: 800; /* Extra Bold */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url('/hugo-marketing-reports/assets/fonts/urbanist/urbanist-latin-900-normal.ttf') format('ttf');
+    src: url('/marketingreports/assets/fonts/urbanist/urbanist-latin-900-normal.ttf') format('ttf');
     font-weight: 900; /* Extra Bold */
     font-style: normal;
 }
