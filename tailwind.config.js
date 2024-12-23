@@ -2,6 +2,7 @@ module.exports = {
   content: [
     "./layouts/**/*.{html,js}",
     "./content/**/*.{html,js}",
+    "./public/**/*.{html,js}",
   ],
   theme: {
     extend: {
