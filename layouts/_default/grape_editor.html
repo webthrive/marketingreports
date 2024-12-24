@@ -3,9 +3,6 @@
 <link rel="stylesheet" href="https://unpkg.com/grapesjs@0.22.4/dist/css/grapes.min.css">
 <link href="https://unpkg.com/grapesjs-project-manager@2.0.5/dist/grapesjs-project-manager.min.css" rel="stylesheet">
 <!-- <link rel="stylesheet" href='{{ "assets/styles.css" | relURL }}' /> -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet">
 
 <script src="https://unpkg.com/grapesjs@0.22.4/dist/grapes.min.js"></script>
 <script src="https://unpkg.com/grapesjs-preset-webpage@1.0.2"></script>
@@ -34,39 +31,6 @@
 		pageManager: true,
 		StorageManager: {
 			type: 'indexddb',
-		},
-		styleManager: {
-			sectors: [
-				{
-					name: 'Typography',
-					properties: [
-						{
-							name: 'Font family',
-							property: 'font-family',
-							type: 'select',
-							defaults: 'Arial, sans-serif',
-							list: [
-								{ value: 'Arial, sans-serif', name: 'Arial' },
-								{ value: 'Agu Display, sans-serif', name: 'Agu Display' },
-								{ value: 'Roboto, sans-serif', name: 'Roboto'},
-								{ value: 'Arial Black, sans-serif', name: 'Arial Black' },
-								{ value: 'Brush Script MT, sans-serif', name: 'Brush Script MT' },
-								{ value: 'Comic Sans MS, sans-serif', name: 'Comic Sans MS' },
-								{ value: 'Courier New, sans-serif', name: 'Courier New' },
-								{ value: 'Georgia, sans-serif', name: 'Georgia' },
-								{ value: 'Helvetica, sans-serif', name: 'Helvetica' },
-								{ value: 'Impact, sans-serif', name: 'Impact' },
-								{ value: 'Lucida Sans Unicode, sans-serif', name: 'Lucida Sans Unicode' },
-								{ value: 'Tahoma, sans-serif', name: 'Tahoma' },
-								{ value: 'Times New Roman, sans-serif', name: 'Times New Roman' },
-								{ value: 'Trebuchet MS, sans-serif', name: 'Trebuchet MS' },
-								{ value: 'Verdana, sans-serif', name: 'Verdana' },
-							]
-
-						}
-					]
-				}
-			]
 		},
 		plugins: [
 			'gjs-blocks-basic',
