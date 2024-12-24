@@ -1,0 +1,1036 @@
+<!doctype html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="description" content="" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+
+      <title>
+         Marketing Reports | Grape Editor
+      </title>
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+      <link rel="stylesheet" href='/marketingreports/assets/styles.css' />
+
+   </head>
+
+   <body class="bg-black">
+      
+      
+
+<div class="bg-no-repeat bg-cover bg-center" style="background-image: url(/marketingreports/assets/images/bg/form-bg.png);">
+   
+   <div class="border-b border-[#FFFFFF29]">
+       <div class="container">
+           
+           <header class="py-4">
+               <div class="flex justify-between items-center">
+                    <a href="https://colinharbut.github.io/marketingreports/">
+                        <img src="/marketingreports/assets/images/logos/site-logo.svg" alt="Marketing Reports logo">
+                    </a>
+                   <nav class="nav-list" id="toggle-menu">
+                       <ul class="flex lg:flex-row flex-col lg:items-center text-white font-semibold text-[14px] font-Inter">
+                        
+                            <li><a href="/marketingreports/dashboard" class="px-5 py-[14px] lg:inline-block block hover:text-neutral-300">Marketing Dashboard</a></li>
+                        
+                            <li><a href="#!" class="px-5 py-[14px] lg:inline-block block hover:text-neutral-300">Integrations</a></li>
+                        
+                            <li><a href="#!" class="px-5 py-[14px] lg:inline-block block hover:text-neutral-300">Blog</a></li>
+                        
+                       </ul>
+                   </nav>
+
+                   
+                        <div class="lg:flex hidden items-center lg:mx-0 my-3 mx-4" id="interest-button">
+                            <a href="sign-in"
+                                class="text-white px-5 py-[14px] font-semibold text-[14px] rounded-[10px] border-2 border-white border-opacity-15 flex justify-center items-center lg:me-3 me-0 lg:mb-0 mb-3">
+                                <img src='/marketingreports/assets/images/logos/users-icon.svg' alt="users-icon"> <span
+                                    class="ms-2">Sign In</span>
+                            </a>
+                            <a href="sing-up"
+                                class="text-white bg-white px-5 py-[14px] font-semibold text-[14px] rounded-[10px] border-2 border-white border-opacity-15 flex justify-center items-center">
+                                <span
+                                    class="bg-gradient-to-r from-[#3245FF] to-[#B845ED] bg-clip-text text-transparent me-2">Get Started</span>
+                                <img src='/marketingreports/assets/images/logos/arrow-to-right.svg' alt="users-icon">
+                            </a>
+                        </div>
+                    
+
+                   <div id="mobile-menu" class="lg:hidden block">
+                       <span><img src='/marketingreports/assets/images/menu.svg' alt="menu-icon" class="menu-icon open image-nav"></span>
+                       <span><img src='/marketingreports/assets/images/cross.svg' alt="close-icon" class="menu-icon close image-nav"></span>
+                   </div>
+               </div>
+           </header>
+           
+       </div>
+   </div>
+
+
+      
+
+<link rel="stylesheet" href="https://unpkg.com/grapesjs@0.22.4/dist/css/grapes.min.css">
+<link href="https://unpkg.com/grapesjs-project-manager@2.0.5/dist/grapesjs-project-manager.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/grapesjs@0.22.4/dist/grapes.min.js"></script>
+<script src="https://unpkg.com/grapesjs-preset-webpage@1.0.2"></script>
+<script src="https://unpkg.com/grapesjs-blocks-basic@1.0.1"></script>
+<script src="https://unpkg.com/grapesjs-plugin-forms@2.0.5"></script>
+<script src="https://unpkg.com/grapesjs-component-countdown@1.0.1"></script>
+<script src="https://unpkg.com/grapesjs-plugin-export@1.0.11"></script>
+<script src="https://unpkg.com/grapesjs-tabs@1.0.6"></script>
+<script src="https://unpkg.com/grapesjs-custom-code@1.0.1"></script>
+<script src="https://unpkg.com/grapesjs-touch@0.1.1"></script>
+<script src="https://unpkg.com/grapesjs-parser-postcss@1.0.1"></script>
+<script src="https://unpkg.com/grapesjs-tooltip@0.1.7"></script>
+<script src="https://unpkg.com/grapesjs-tui-image-editor@0.1.3"></script>
+<script src="https://unpkg.com/grapesjs-typed@1.0.5"></script>
+<script src="https://unpkg.com/grapesjs-style-bg@2.0.1"></script>
+<script src="https://unpkg.com/grapesjs-tailwind"></script>
+<script src="https://unpkg.com/grapesjs-project-manager"></script>
+
+<div id="gjs"></div>
+
+<script type="text/javascript">
+	var escapeName = (name) => `${name}`.trim().replace(/([^a-z0-9\w-:/]+)/gi, '-');
+	var editor = grapesjs.init({
+		container: '#gjs',
+		selectorManager: { escapeName },
+		pageManager: true,
+		StorageManager: {
+			type: 'indexddb',
+		},
+		styleManager: {
+			sectors: [
+				{
+					name: 'Typography',
+					properties: [
+						{
+							name: 'Font family',
+							property: 'font-family',
+							type: 'select',
+							defaults: 'Arial, sans-serif',
+							list: [
+								{ value: 'Arial, sans-serif', name: 'Arial' },
+								{ value: 'Agu Display, sans-serif', name: 'Agu Display' },
+								{ value: 'Roboto, sans-serif', name: 'Roboto'},
+								{ value: 'Arial Black, sans-serif', name: 'Arial Black' },
+								{ value: 'Brush Script MT, sans-serif', name: 'Brush Script MT' },
+								{ value: 'Comic Sans MS, sans-serif', name: 'Comic Sans MS' },
+								{ value: 'Courier New, sans-serif', name: 'Courier New' },
+								{ value: 'Georgia, sans-serif', name: 'Georgia' },
+								{ value: 'Helvetica, sans-serif', name: 'Helvetica' },
+								{ value: 'Impact, sans-serif', name: 'Impact' },
+								{ value: 'Lucida Sans Unicode, sans-serif', name: 'Lucida Sans Unicode' },
+								{ value: 'Tahoma, sans-serif', name: 'Tahoma' },
+								{ value: 'Times New Roman, sans-serif', name: 'Times New Roman' },
+								{ value: 'Trebuchet MS, sans-serif', name: 'Trebuchet MS' },
+								{ value: 'Verdana, sans-serif', name: 'Verdana' },
+							]
+
+						}
+					]
+				}
+			]
+		},
+		plugins: [
+			'gjs-blocks-basic',
+			'grapesjs-plugin-forms',
+			'grapesjs-component-countdown',
+			'grapesjs-plugin-export',
+			'grapesjs-tabs',
+			'grapesjs-custom-code',
+			'grapesjs-touch',
+			'grapesjs-parser-postcss',
+			'grapesjs-tooltip',
+			'grapesjs-tui-image-editor',
+			'grapesjs-typed',
+			'grapesjs-style-bg',
+			'grapesjs-preset-webpage',
+			'grapesjs-tailwind',
+			'grapesjs-project-manager',
+			'Download',
+		],
+		pluginsOpts: {
+			'grapesjs-preset-webpage': {},
+		},
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+
+	});
+	editor.runCommand('get-tailwindCss');
+	const pn = editor.Panels;
+	pn.addButton('options', {
+		id: 'open-templates',
+		className: 'fa fa-folder-o',
+		attributes: {
+			title: 'Open projects and templates'
+		},
+		command: 'open-templates', 
+	});
+	pn.addButton('views', {
+		id: 'open-pages',
+		className: 'fa fa-file-o',
+		attributes: {
+			title: 'page manager'
+		},
+		command: 'open-pages',
+		togglable: false
+	});
+
+
+
+	function Download(editor) {
+		const pn = editor.Panels;
+		const cmdm = editor.Commands;
+
+		cmdm.add("download-publish", {
+			run(editor, sender) {
+				var currentPage = editor.Pages.getSelected();
+				var htmlContent = editor.getHtml();
+				var cssContent = editor.getCss();
+				var fullContent = `<!DOCTYPE html>
+					<html lang="en">
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1.0">
+						<title>Exported GrapesJS Page</title>
+						<lcr src="https://cdn.tailwindcss.com" defer></lcr>
+						<style>${cssContent}</style>
+					</head>
+					<body>
+						${htmlContent}
+					</body>
+						
+					</html>`;
+
+
+				fetch('http://localhost:3002/input', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify({
+						content: fullContent,
+						fileName: currentPage.attributes.name,
+					})
+				}).then(response => response.json())
+					.then(data => {
+						alert('Create new page link.')
+					})
+					.catch(error => {
+						console.error('Error', error)
+						alert('Error occurred while saving the file.')
+					});
+			}
+		});
+
+		pn.addButton("options", [
+			{
+				id: "view-info",
+				label: 'Publish',
+				class: 'btn-secondary',
+				command: "download-publish",
+				attributes: {
+					title: "Publish",
+					"data-tooltip-pos": "bottom",
+				},
+			},
+		]);
+
+		pn.addPanel({
+			id: 'page-manager',
+			el: '.panel__pages',  // Create this element in your HTML to hold the page manager panel
+			buttons: [
+				{
+					id: 'new-page',
+					className: 'fa fa-plus',
+					command: 'create-page',  // Command for creating a new page
+					attributes: { title: 'Create New Page' },
+				},
+				{
+					id: 'page-list',
+					className: 'fa fa-list',
+					command: 'show-page-list',  // Command to show the list of pages
+					attributes: { title: 'Pages List' },
+				},
+			],
+		});
+
+		// Command to create a new page
+		cmdm.add('create-page', {
+			run(editor, sender) {
+				const newPage = {
+					id: `page-${Date.now()}`,
+					name: 'New Page',
+					content: '',  // Empty content initially
+				};
+
+				// Store the new page (use localStorage or a custom data store)
+				const pages = editor.getCustomData('pages') || [];
+				pages.push(newPage);
+				editor.setCustomData('pages', pages);
+
+				alert('New page created!');
+			},
+		});
+
+		// Command to show the page list and allow switching between pages
+		cmdm.add('show-page-list', {
+			run(editor, sender) {
+				const pages = editor.getCustomData('pages', []);
+				const pageListHTML = pages
+					.map((page) => `<li><a href="#" data-page-id="${page.id}">${page.name}</a></li>`)
+					.join('');
+
+				// Create a simple page list modal
+				const pageListModal = document.createElement('div');
+				pageListModal.classList.add('page-list-modal');
+				pageListModal.innerHTML = `<ul>${pageListHTML}</ul>`;
+
+				document.body.appendChild(pageListModal);
+
+				// Add event listeners to switch between pages
+				pageListModal.querySelectorAll('a').forEach((link) => {
+					link.addEventListener('click', (e) => {
+						const pageId = e.target.getAttribute('data-page-id');
+						switchToPage(pageId);
+					});
+				});
+			},
+		});
+
+		editor.PagesApp.removePage = function (e) {
+			const userConfirmed = window.confirm('Are you sure you want to delete this page?');
+
+			if (userConfirmed) {
+				page_key = e.currentTarget.dataset.key;
+				const currentPage = editor.Pages.get(page_key);
+				remove_pagename = currentPage.get('name');
+
+				console.log(currentPage.get('name'));
+				editor.Pages.remove(e.currentTarget.dataset.key);
+
+				fetch('http://localhost:3002/input', {
+					method: 'DELETE',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify({
+						folderName: remove_pagename,
+					})
+				}).then(response => response.json())
+					.then(error => {
+						alert('Remove page.')
+					})
+					.catch(error => {
+						console.error('Error', error)
+						alert('Error occurred while saving the file.')
+					});
+			}
+		}
+
+
+
+
+
+
+
+	}
+
+
+</script>
+
+
+      <footer class="pt-16 pb-8 border-t border-[#FFFFFF29]">
+   <div class="container">
+       <div class="flex justify-between lg:flex-row flex-col border-b border-[#FFFFFF29] pb-12 gap-6">
+           <div class="w-1/5">
+               <img src="/marketingreports/assets/images/logos/site-logo.svg" alt="Marketing Reports logo">
+               <ul class="flex gap-2 mt-8">
+                       
+                        <li class="h-9 w-9 min-w-9 rounded-full p-2 border border-[#858B9833] flex items-center justify-center">
+                            <a href="">
+                                <img src="/marketingreports/assets/images/logos/SocialMedia/facebook.svg" alt="facebook icon">
+                            </a>
+                        </li>
+                       
+                        <li class="h-9 w-9 min-w-9 rounded-full p-2 border border-[#858B9833] flex items-center justify-center">
+                            <a href="">
+                                <img src="/marketingreports/assets/images/logos/SocialMedia/pinterest.svg" alt="pinterest icon">
+                            </a>
+                        </li>
+                       
+                        <li class="h-9 w-9 min-w-9 rounded-full p-2 border border-[#858B9833] flex items-center justify-center">
+                            <a href="">
+                                <img src="/marketingreports/assets/images/logos/SocialMedia/x.svg" alt="twitter icon">
+                            </a>
+                        </li>
+                       
+                        <li class="h-9 w-9 min-w-9 rounded-full p-2 border border-[#858B9833] flex items-center justify-center">
+                            <a href="youtube.com">
+                                <img src="/marketingreports/assets/images/logos/SocialMedia/youtube.svg" alt="youtube icon">
+                            </a>
+                        </li>
+                    
+               </ul>
+           </div>
+           <div class="lg:w-3/4 w-full flex md:flex-row flex-col justify-between gap-6">
+               <div class="lg:w-1/5 md:w-2/4 w-full">
+                
+                    <h3 class="font-Inter text-base font-bold text-white mb-5">
+                        Browse
+                    </h3>
+                    <ul class="font-Inter text-sm font-normal text-[#BFC1C9] space-y-5">
+                        
+                        <li>
+                            <a href="/" class="hover:text-neutral-300 text-nowrap">
+                            Marketing Dashboards
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="/Marketing-Dashboards" class="hover:text-neutral-300 text-nowrap">
+                            Marketing Dashboards
+                            </a>
+                        </li>
+                        
+                    </ul>
+                
+               </div>
+               <div class="lg:w-1/5 md:w-2/4 w-full">
+                    
+                        <h3 class="font-Inter text-base font-bold text-white mb-5">
+                            Learn
+                        </h3>
+                        <ul class="font-Inter text-sm font-normal text-[#BFC1C9] space-y-5">
+                            
+                                <li>
+                                    <a href="/" class="hover:text-neutral-300 ">
+                                        Blog
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                   
+               </div>
+               <div class="lg:w-1/5 md:w-2/4 w-full">
+                    
+                        <h3 class="font-Inter text-base font-bold text-white mb-5">
+                            Support
+                        </h3>
+                        <ul class="font-Inter text-sm font-normal text-[#BFC1C9] space-y-5">
+                            
+                                <li>
+                                    <a href="/" class="hover:text-neutral-300 ">
+                                        Support
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/FAQs" class="hover:text-neutral-300 ">
+                                        FAQs
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                    
+               </div>
+               <div class="lg:w-1/5 md:w-2/4 w-full">
+                    
+                        <h3 class="font-Inter text-base font-bold text-white mb-5">
+                            Company
+                        </h3>
+                        <ul class="font-Inter text-sm font-normal text-[#BFC1C9] space-y-5">
+                                
+                                    <li>
+                                        <a href="/our-story" class="hover:text-neutral-300 ">
+                                            Our Story
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/contact" class="hover:text-neutral-300 ">
+                                            Contact
+                                        </a>
+                                    </li>
+                                
+                        </ul>
+                    
+               </div>
+           </div>
+       </div>
+       <div class="flex lg:flex-row flex-col gap-4 lg:justify-between justify-center items-center pt-8">
+           <p class="font-Inter text-sm font-normal text-[#BFC1C9]">
+                Company Web Thrive, LLC. All rights reserved.
+           </p>
+           <ul class="flex gap-5 font-Inter text-sm font-normal text-[#BFC1C9]">
+                
+                    <li><a href="/marketingreports/terms" class="hover:text-neutral-300">Terms &amp; Conditions</a></li>
+                
+                    <li><a href="/marketingreports/privacy" class="hover:text-neutral-300">Privacy Policy</a></li>
+                
+           </ul>
+       </div>
+   </div>
+</footer> 
+      
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src='/marketingreports/assets/js/custom.js'></script>
+
+      
+      <script>
+         var OurPartner = new Swiper(".OurPartner", {
+            spaceBetween: 15,
+            slidesPerView: 2,
+            autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false,
+         },
+            breakpoints: {
+
+               768: {
+                     slidesPerView: 4,
+               },
+               1024: {
+                     slidesPerView: 6,
+               },
+            },
+         });
+   </script>
+
+   </body>
+</html>
