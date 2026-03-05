@@ -196,11 +196,24 @@ a:hover{opacity:.8}
 /* PAGE CONTENT AREAS */
 .page-content{display:none}.page-content.active{display:block}
 
-.post-page-wrap{max-width:780px;margin:3rem auto;padding:0 1.5rem}
-.post-page-back{display:inline-block;margin-bottom:1.5rem;color:var(--accent);font-size:.85rem;text-decoration:none}
-.post-page-back:hover{text-decoration:underline}
-.post-page-title{font-size:2rem;font-weight:700;line-height:1.2;margin-bottom:.75rem}
-.post-page-meta{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}
+
+/* ── Blog post improvements ──────────────────────── */
+.post-page-wrap{max-width:720px;margin:3rem auto;padding:0 2rem}
+.post-page-back{display:inline-flex;align-items:center;gap:.35rem;margin-bottom:2rem;color:var(--text-muted);font-family:var(--font-mono);font-size:.7rem;text-decoration:none;letter-spacing:.04em;transition:color .15s}
+.post-page-back:hover{color:var(--accent)}
+.post-page-title{font-size:2.1rem;font-weight:700;line-height:1.18;margin-bottom:.75rem;letter-spacing:-.025em}
+.post-page-meta{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:2rem;padding-bottom:1.25rem;border-bottom:1px solid var(--border)}
+.article-body{font-size:.95rem;line-height:1.75;color:var(--text-muted)}
+.article-body h2{font-size:1.05rem;font-weight:700;color:var(--text);margin:2rem 0 .6rem;padding-left:.9rem;border-left:3px solid var(--accent);font-family:var(--font-mono);letter-spacing:-.01em}
+.article-body p{margin-bottom:1rem}
+.article-body ul{padding-left:1.4rem;margin-bottom:1rem}
+.article-body li{margin-bottom:.4rem}
+.article-body strong{color:var(--text);font-weight:600}
+.article-hero{margin-bottom:2rem;border-radius:10px;overflow:hidden;border:1px solid var(--border)}
+.post-cta-block{margin-top:3rem;padding:1.75rem 2rem;background:linear-gradient(135deg,rgba(0,212,255,.07),rgba(0,229,160,.04));border:1px solid rgba(0,212,255,.2);border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.post-cta-text p{margin:0;font-size:.85rem;color:var(--text-muted);margin-top:.3rem}
+.post-cta-text strong{color:var(--text);font-size:.95rem}
+
 </style>
 </head>
 <body>
@@ -227,7 +240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim)">January 15, 2025</span>
     <span class="post-tag">Whatagraph</span><span class="post-tag">AI Features</span>
   </div>
-  <div style="margin-bottom:2rem;border-radius:10px;overflow:hidden;border:1px solid var(--border)">
+  <div class="article-hero">
 <svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#0f1318">
   <!-- bg panels -->
   <rect x="16" y="16" width="340" height="248" rx="8" fill="#161b22" stroke="#1e2530" stroke-width="1"/>
@@ -289,7 +302,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>The chatbot lets you ask questions about your marketing data in plain language — "How much was spent last month?" or "Which campaigns are underperforming?" — and get instant answers based on your actual data sources and date ranges. You can also select from pre-written questions if you want a faster workflow.</p>
       <h2>Availability</h2>
       <p>Both features launched as part of Whatagraph IQ and are available on paid plans. IQ+ (included in higher-tier plans) adds the ability to create custom dimensions, blends, and metrics via natural language prompts.</p> <p>MarketingReports.io may earn a commission if you sign up via our Whatagraph link. We only cover tools we've evaluated — see our affiliate disclosure.</p></div>
-      <a href="https://whatagraph.com" target="_blank" class="affiliate-cta">Try Whatagraph Free →</a>
+<div class="post-cta-block">
+  <div class="post-cta-text">
+    <strong>Try Whatagraph Free</strong>
+    <p>See AI Summaries in action — free trial, no credit card required.</p>
+  </div>
+  <a href="https://whatagraph.com/?fpr=marketingreports" class="affiliate-cta" target="_blank" rel="noopener nofollow">Try Whatagraph Free →</a>
+</div>
+
 </div>
 </main>
 <footer class="site-footer">

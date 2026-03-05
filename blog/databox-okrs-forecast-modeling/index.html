@@ -196,11 +196,24 @@ a:hover{opacity:.8}
 /* PAGE CONTENT AREAS */
 .page-content{display:none}.page-content.active{display:block}
 
-.post-page-wrap{max-width:780px;margin:3rem auto;padding:0 1.5rem}
-.post-page-back{display:inline-block;margin-bottom:1.5rem;color:var(--accent);font-size:.85rem;text-decoration:none}
-.post-page-back:hover{text-decoration:underline}
-.post-page-title{font-size:2rem;font-weight:700;line-height:1.2;margin-bottom:.75rem}
-.post-page-meta{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}
+
+/* ── Blog post improvements ──────────────────────── */
+.post-page-wrap{max-width:720px;margin:3rem auto;padding:0 2rem}
+.post-page-back{display:inline-flex;align-items:center;gap:.35rem;margin-bottom:2rem;color:var(--text-muted);font-family:var(--font-mono);font-size:.7rem;text-decoration:none;letter-spacing:.04em;transition:color .15s}
+.post-page-back:hover{color:var(--accent)}
+.post-page-title{font-size:2.1rem;font-weight:700;line-height:1.18;margin-bottom:.75rem;letter-spacing:-.025em}
+.post-page-meta{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:2rem;padding-bottom:1.25rem;border-bottom:1px solid var(--border)}
+.article-body{font-size:.95rem;line-height:1.75;color:var(--text-muted)}
+.article-body h2{font-size:1.05rem;font-weight:700;color:var(--text);margin:2rem 0 .6rem;padding-left:.9rem;border-left:3px solid var(--accent);font-family:var(--font-mono);letter-spacing:-.01em}
+.article-body p{margin-bottom:1rem}
+.article-body ul{padding-left:1.4rem;margin-bottom:1rem}
+.article-body li{margin-bottom:.4rem}
+.article-body strong{color:var(--text);font-weight:600}
+.article-hero{margin-bottom:2rem;border-radius:10px;overflow:hidden;border:1px solid var(--border)}
+.post-cta-block{margin-top:3rem;padding:1.75rem 2rem;background:linear-gradient(135deg,rgba(0,212,255,.07),rgba(0,229,160,.04));border:1px solid rgba(0,212,255,.2);border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.post-cta-text p{margin:0;font-size:.85rem;color:var(--text-muted);margin-top:.3rem}
+.post-cta-text strong{color:var(--text);font-size:.95rem}
+
 </style>
 </head>
 <body>
@@ -227,7 +240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim)">October 29, 2025</span>
     <span class="post-tag">Databox</span><span class="post-tag">OKRs</span><span class="post-tag">Forecasting</span>
   </div>
-  <div style="margin-bottom:2rem;border-radius:10px;overflow:hidden;border:1px solid var(--border)">
+  <div class="article-hero">
 <svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#0f1318">
   <rect x="16" y="16" width="220" height="248" rx="8" fill="#161b22" stroke="#1e2530" stroke-width="1"/>
   <rect x="248" y="16" width="456" height="115" rx="8" fill="#161b22" stroke="#1e2530" stroke-width="1"/>
@@ -304,7 +317,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Forecast Modeling lets you test whether a goal is realistic before you commit. You pick a KPI (say, MRR), add impacting drivers (Net New MRR, Churn Rate, Expansion MRR), and Databox generates three projections: Optimistic, Realistic, and Pessimistic. Correlation scores show which drivers have the greatest impact on the main metric. Once you're confident in a scenario, you can use the forecasted values to set your actual goals.</p>
       <h2>Why It Matters</h2>
       <p>Most reporting tools show you what happened. Databox is increasingly positioning around what will happen — and whether the targets you've set are achievable. For in-house teams that do annual planning in spreadsheets, having forecasts and OKRs inside the same tool that tracks daily performance is a meaningful change.</p> <p>MarketingReports.io may earn a commission if you sign up via our Databox link. We only cover tools we've evaluated — see our affiliate disclosure.</p></div>
-      <a href="https://databox.com" target="_blank" class="affiliate-cta">Try Databox Free →</a>
+<div class="post-cta-block">
+  <div class="post-cta-text">
+    <strong>Try Databox Free</strong>
+    <p>Set up OKRs and Forecast Modeling on a free Databox account.</p>
+  </div>
+  <a href="https://databox.com/?utm_source=marketingreports" class="affiliate-cta" target="_blank" rel="noopener nofollow">Try Databox Free →</a>
+</div>
+
 </div>
 </main>
 <footer class="site-footer">

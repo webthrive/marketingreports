@@ -196,11 +196,24 @@ a:hover{opacity:.8}
 /* PAGE CONTENT AREAS */
 .page-content{display:none}.page-content.active{display:block}
 
-.post-page-wrap{max-width:780px;margin:3rem auto;padding:0 1.5rem}
-.post-page-back{display:inline-block;margin-bottom:1.5rem;color:var(--accent);font-size:.85rem;text-decoration:none}
-.post-page-back:hover{text-decoration:underline}
-.post-page-title{font-size:2rem;font-weight:700;line-height:1.2;margin-bottom:.75rem}
-.post-page-meta{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}
+
+/* ── Blog post improvements ──────────────────────── */
+.post-page-wrap{max-width:720px;margin:3rem auto;padding:0 2rem}
+.post-page-back{display:inline-flex;align-items:center;gap:.35rem;margin-bottom:2rem;color:var(--text-muted);font-family:var(--font-mono);font-size:.7rem;text-decoration:none;letter-spacing:.04em;transition:color .15s}
+.post-page-back:hover{color:var(--accent)}
+.post-page-title{font-size:2.1rem;font-weight:700;line-height:1.18;margin-bottom:.75rem;letter-spacing:-.025em}
+.post-page-meta{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:2rem;padding-bottom:1.25rem;border-bottom:1px solid var(--border)}
+.article-body{font-size:.95rem;line-height:1.75;color:var(--text-muted)}
+.article-body h2{font-size:1.05rem;font-weight:700;color:var(--text);margin:2rem 0 .6rem;padding-left:.9rem;border-left:3px solid var(--accent);font-family:var(--font-mono);letter-spacing:-.01em}
+.article-body p{margin-bottom:1rem}
+.article-body ul{padding-left:1.4rem;margin-bottom:1rem}
+.article-body li{margin-bottom:.4rem}
+.article-body strong{color:var(--text);font-weight:600}
+.article-hero{margin-bottom:2rem;border-radius:10px;overflow:hidden;border:1px solid var(--border)}
+.post-cta-block{margin-top:3rem;padding:1.75rem 2rem;background:linear-gradient(135deg,rgba(0,212,255,.07),rgba(0,229,160,.04));border:1px solid rgba(0,212,255,.2);border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.post-cta-text p{margin:0;font-size:.85rem;color:var(--text-muted);margin-top:.3rem}
+.post-cta-text strong{color:var(--text);font-size:.95rem}
+
 </style>
 </head>
 <body>
@@ -227,7 +240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim)">February 3, 2026</span>
     <span class="post-tag">Looker Studio</span><span class="post-tag">Free Tools</span><span class="post-tag">Google</span>
   </div>
-  <div style="margin-bottom:2rem;border-radius:10px;overflow:hidden;border:1px solid var(--border)">
+  <div class="article-hero">
 <svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;background:#0f1318">
   <!-- header bar -->
   <rect x="0" y="0" width="720" height="36" fill="#161b22"/>
@@ -298,6 +311,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p><strong>No white-labeling.</strong> You can add your logo, but Looker Studio reports are hosted on Google's domain. For agencies that need branded client portals on a custom URL, this is a dealbreaker.</p>
       <h2>Who Should Use It</h2>
       <p>Looker Studio is the right call if: your primary data sources are Google products, you have someone comfortable with basic data modeling, you don't need white-labeled client-facing reports, and you're not running into GA4 sampling issues. For teams managing multiple client accounts or needing automated insights, a paid tool like <strong>Whatagraph</strong> or <strong>Databox</strong> will save more time than it costs.</p>
+
+<div class="post-cta-block">
+  <div class="post-cta-text">
+    <strong>Try Looker Studio Free</strong>
+    <p>Looker Studio is completely free — start building your first dashboard today.</p>
+  </div>
+  <a href="https://lookerstudio.google.com/" class="affiliate-cta" target="_blank" rel="noopener nofollow">Try Looker Studio Free →</a>
+</div>
+
 </div>
 </main>
 <footer class="site-footer">
