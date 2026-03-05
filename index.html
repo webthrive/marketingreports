@@ -190,6 +190,23 @@ a:hover{opacity:.8}
 
 /* PAGE CONTENT AREAS */
 .page-content{display:none}.page-content.active{display:block}
+
+/* ── Featured Dashboards ─────────────────────────── */
+.featured-dashboards{padding:4rem 0;border-top:1px solid var(--border)}
+.section-header{text-align:center;margin-bottom:2.5rem}
+.section-title{font-size:1.6rem;font-weight:700;margin:.4rem 0 .6rem;letter-spacing:-.02em}
+.section-sub{font-size:.9rem;color:var(--text-muted)}
+.fd-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
+.fd-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s;display:flex;flex-direction:column}
+.fd-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.fd-preview{background:#0b0e14;border-bottom:1px solid var(--border);overflow:hidden;line-height:0}
+.fd-preview svg{width:100%;display:block}
+.fd-info{padding:1rem 1.1rem}
+.fd-source{font-family:var(--font-mono);font-size:.6rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.25rem}
+.fd-name{font-size:.9rem;font-weight:600;color:var(--text);margin-bottom:.6rem;line-height:1.3}
+.fd-meta{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center}
+.fd-tag{font-family:var(--font-mono);font-size:.58rem;background:var(--bg-elevated);color:var(--text-muted);padding:.15rem .45rem;border-radius:3px;border:1px solid var(--border)}
+.fd-free{font-family:var(--font-mono);font-size:.58rem;background:rgba(0,229,160,.1);color:var(--green);padding:.15rem .45rem;border-radius:3px;border:1px solid rgba(0,229,160,.2);font-weight:700}
 </style>
 </head>
 <body>
@@ -310,7 +327,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <span class="post-arrow">→</span>
           </a>
-        </a>
       </main>
 
       <!-- SIDEBAR -->
@@ -344,18 +360,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="sidebar-widget">
           <div class="widget-header">Popular Platforms</div>
           <div class="tool-list">
-            <a href="#" class="tool-item" onclick="return false"><div class="tool-icon" style="background:rgba(66,133,244,.1);color:#4285f4">GA</div><span class="tool-name">Google Ads</span></a>
-            <a href="#" class="tool-item" onclick="return false"><div class="tool-icon" style="background:rgba(24,119,242,.15);color:#1877f2">FB</div><span class="tool-name">Facebook Ads</span></a>
-            <a href="#" class="tool-item" onclick="return false"><div class="tool-icon" style="background:rgba(0,229,160,.1);color:#00e5a0">SC</div><span class="tool-name">Search Console</span></a>
-            <a href="#" class="tool-item" onclick="return false"><div class="tool-icon" style="background:rgba(255,122,0,.15);color:#ff7a00">HS</div><span class="tool-name">HubSpot</span></a>
-            <a href="#" class="tool-item" onclick="return false"><div class="tool-icon" style="background:rgba(150,191,71,.15);color:#96bf47">SH</div><span class="tool-name">Shopify</span></a>
+            <a href="/marketing-dashboards/google-ads/" class="tool-item"><div class="tool-icon" style="background:rgba(66,133,244,.1);color:#4285f4">GA</div><span class="tool-name">Google Ads</span></a>
+            <a href="/marketing-dashboards/facebook-ads/" class="tool-item"><div class="tool-icon" style="background:rgba(24,119,242,.15);color:#1877f2">FB</div><span class="tool-name">Facebook Ads</span></a>
+            <a href="/marketing-dashboards/google-search-console/" class="tool-item"><div class="tool-icon" style="background:rgba(0,229,160,.1);color:#00e5a0">SC</div><span class="tool-name">Search Console</span></a>
+            <a href="/marketing-dashboards/hubspot-marketing/" class="tool-item"><div class="tool-icon" style="background:rgba(255,122,0,.15);color:#ff7a00">HS</div><span class="tool-name">HubSpot</span></a>
+            <a href="/marketing-dashboards/shopify/" class="tool-item"><div class="tool-icon" style="background:rgba(150,191,71,.15);color:#96bf47">SH</div><span class="tool-name">Shopify</span></a>
           </div>
         </div>
 
         <div class="sidebar-widget" style="padding:1.4rem;background:linear-gradient(135deg,rgba(0,212,255,.06),rgba(0,229,160,.04))">
           <div style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem">Need Automated Reports?</div>
           <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:1rem;line-height:1.5">Compare the top automated reporting tools side-by-side — pricing, integrations, and white-labeling.</p>
-          <a href="#" class="affiliate-cta" style="font-size:.65rem;padding:.45rem .9rem" onclick="showPage('tools');return false">Compare All Tools →</a>
+          <a href="/marketing-dashboards/" class="affiliate-cta" style="font-size:.65rem;padding:.45rem .9rem">Compare All Tools →</a>
         </div>
       </aside>
     </div>
@@ -365,6 +381,293 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ═══════════════════════════════════════════════════
      PAGE 2: TOOLS DIRECTORY
 ════════════════════════════════════════════════════ --></main>
+
+<!-- FEATURED DASHBOARDS SECTION -->
+<section class="featured-dashboards">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">FEATURED DASHBOARDS</div>
+      <h2 class="section-title">Hand-Picked Looker Studio Templates</h2>
+      <p class="section-sub">Free, copy-ready dashboards from trusted sources. Click any card to get your copy.</p>
+    </div>
+    <div class="fd-grid">
+
+      <!-- 1. Coupler.io — Google Ads Performance -->
+      <a href="https://blog.coupler.io/google-ads-looker-studio-template/" target="_blank" rel="noopener" class="fd-card">
+        <div class="fd-preview">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="220" fill="#0f1318"/>
+            <rect x="16" y="16" width="180" height="90" rx="6" fill="#161b22"/>
+            <text x="26" y="34" font-family="monospace" font-size="7" fill="#4285f4" font-weight="700">GOOGLE ADS</text>
+            <text x="26" y="52" font-family="monospace" font-size="18" fill="white" font-weight="700">$24,830</text>
+            <text x="26" y="65" font-family="monospace" font-size="7" fill="#6b7280">Total Spend</text>
+            <rect x="26" y="72" width="60" height="4" rx="2" fill="#4285f4" opacity=".3"/>
+            <rect x="26" y="72" width="38" height="4" rx="2" fill="#4285f4"/>
+            <text x="26" y="94" font-family="monospace" font-size="7" fill="#6b7280">CTR 4.2% · CPC $1.84 · Conv 312</text>
+            <rect x="204" y="16" width="180" height="90" rx="6" fill="#161b22"/>
+            <text x="214" y="34" font-family="monospace" font-size="7" fill="#00d4ff" font-weight="700">IMPRESSIONS</text>
+            <text x="214" y="52" font-family="monospace" font-size="18" fill="white" font-weight="700">1.3M</text>
+            <text x="214" y="65" font-family="monospace" font-size="7" fill="#6b7280">Last 30 days</text>
+            <polyline points="214,88 234,78 254,82 274,70 294,74 314,62 334,68 354,58 374,64" fill="none" stroke="#00d4ff" stroke-width="2"/>
+            <rect x="16" y="118" width="368" height="86" rx="6" fill="#161b22"/>
+            <text x="26" y="134" font-family="monospace" font-size="7" fill="#6b7280" font-weight="700">CAMPAIGN PERFORMANCE</text>
+            <rect x="26" y="140" width="100" height="6" rx="2" fill="#4285f4" opacity=".8"/>
+            <rect x="26" y="150" width="76" height="6" rx="2" fill="#4285f4" opacity=".6"/>
+            <rect x="26" y="160" width="88" height="6" rx="2" fill="#4285f4" opacity=".4"/>
+            <rect x="26" y="170" width="52" height="6" rx="2" fill="#4285f4" opacity=".3"/>
+            <rect x="140" y="140" width="244" height="52" rx="4" fill="#0b0e14"/>
+            <polyline points="150,182 175,165 200,170 225,155 250,158 275,145 300,150 325,138 350,143 370,132" fill="none" stroke="#4285f4" stroke-width="1.5"/>
+            <polyline points="150,185 175,175 200,178 225,168 250,172 275,162 300,167 325,158 350,163 370,155" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-dasharray="3,2"/>
+          </svg>
+        </div>
+        <div class="fd-info">
+          <div class="fd-source">Coupler.io</div>
+          <div class="fd-name">Google Ads Performance Dashboard</div>
+          <div class="fd-meta">
+            <span class="fd-tag">Google Ads</span>
+            <span class="fd-tag">Looker Studio</span>
+            <span class="fd-free">Free</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. Supermetrics — Facebook Ads -->
+      <a href="https://supermetrics.com/template-gallery/looker-studio-facebook-ads" target="_blank" rel="noopener" class="fd-card">
+        <div class="fd-preview">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="220" fill="#0f1318"/>
+            <rect x="16" y="16" width="368" height="40" rx="6" fill="#161b22"/>
+            <text x="26" y="32" font-family="monospace" font-size="7" fill="#1877f2" font-weight="700">META ADS OVERVIEW</text>
+            <text x="26" y="46" font-family="monospace" font-size="7" fill="#6b7280">Jan 1 – Mar 31, 2025 · All Campaigns</text>
+            <rect x="16" y="64" width="84" height="70" rx="6" fill="#161b22"/>
+            <text x="26" y="80" font-family="monospace" font-size="6" fill="#6b7280">REACH</text>
+            <text x="26" y="96" font-family="monospace" font-size="16" fill="white" font-weight="700">892K</text>
+            <text x="26" y="108" font-family="monospace" font-size="6" fill="#00e5a0">↑ 18%</text>
+            <rect x="108" y="64" width="84" height="70" rx="6" fill="#161b22"/>
+            <text x="118" y="80" font-family="monospace" font-size="6" fill="#6b7280">ROAS</text>
+            <text x="118" y="96" font-family="monospace" font-size="16" fill="white" font-weight="700">3.4x</text>
+            <text x="118" y="108" font-family="monospace" font-size="6" fill="#00e5a0">↑ 0.6x</text>
+            <rect x="200" y="64" width="84" height="70" rx="6" fill="#161b22"/>
+            <text x="210" y="80" font-family="monospace" font-size="6" fill="#6b7280">CPM</text>
+            <text x="210" y="96" font-family="monospace" font-size="16" fill="white" font-weight="700">$8.40</text>
+            <text x="210" y="108" font-family="monospace" font-size="6" fill="#ff6437">↑ $1.2</text>
+            <rect x="292" y="64" width="92" height="70" rx="6" fill="#161b22"/>
+            <text x="302" y="80" font-family="monospace" font-size="6" fill="#6b7280">CONV RATE</text>
+            <text x="302" y="96" font-family="monospace" font-size="16" fill="white" font-weight="700">2.8%</text>
+            <text x="302" y="108" font-family="monospace" font-size="6" fill="#00e5a0">↑ 0.3%</text>
+            <rect x="16" y="142" width="368" height="62" rx="6" fill="#161b22"/>
+            <text x="26" y="158" font-family="monospace" font-size="7" fill="#6b7280">SPEND VS REVENUE · BY CAMPAIGN</text>
+            <rect x="26" y="163" width="28" height="30" rx="2" fill="#1877f2" opacity=".7"/>
+            <rect x="62" y="172" width="28" height="21" rx="2" fill="#1877f2" opacity=".5"/>
+            <rect x="98" y="168" width="28" height="25" rx="2" fill="#1877f2" opacity=".6"/>
+            <rect x="134" y="158" width="28" height="35" rx="2" fill="#1877f2" opacity=".8"/>
+            <rect x="170" y="165" width="28" height="28" rx="2" fill="#1877f2" opacity=".5"/>
+            <rect x="206" y="155" width="28" height="38" rx="2" fill="#1877f2"/>
+            <rect x="242" y="162" width="28" height="31" rx="2" fill="#1877f2" opacity=".6"/>
+            <rect x="278" y="170" width="28" height="23" rx="2" fill="#1877f2" opacity=".4"/>
+            <rect x="314" y="160" width="28" height="33" rx="2" fill="#1877f2" opacity=".7"/>
+            <rect x="350" y="166" width="28" height="27" rx="2" fill="#1877f2" opacity=".5"/>
+          </svg>
+        </div>
+        <div class="fd-info">
+          <div class="fd-source">Supermetrics</div>
+          <div class="fd-name">Meta Ads Performance Report</div>
+          <div class="fd-meta">
+            <span class="fd-tag">Facebook Ads</span>
+            <span class="fd-tag">Looker Studio</span>
+            <span class="fd-free">Free</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Catchr — Multi-Channel -->
+      <a href="https://www.catchr.io/templates-looker-studio-platform/google-ads" target="_blank" rel="noopener" class="fd-card">
+        <div class="fd-preview">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="220" fill="#0f1318"/>
+            <text x="16" y="30" font-family="monospace" font-size="8" fill="white" font-weight="700">CROSS-CHANNEL OVERVIEW</text>
+            <text x="16" y="42" font-family="monospace" font-size="6" fill="#6b7280">Google Ads · Meta · LinkedIn · Search Console</text>
+            <circle cx="110" cy="120" r="60" fill="none" stroke="#161b22" stroke-width="20"/>
+            <circle cx="110" cy="120" r="60" fill="none" stroke="#4285f4" stroke-width="20" stroke-dasharray="94 283" stroke-dashoffset="0"/>
+            <circle cx="110" cy="120" r="60" fill="none" stroke="#1877f2" stroke-width="20" stroke-dasharray="66 283" stroke-dashoffset="-94"/>
+            <circle cx="110" cy="120" r="60" fill="none" stroke="#0077b5" stroke-width="20" stroke-dasharray="38 283" stroke-dashoffset="-160"/>
+            <circle cx="110" cy="120" r="60" fill="none" stroke="#ffb547" stroke-width="20" stroke-dasharray="85 283" stroke-dashoffset="-198"/>
+            <text x="110" y="115" font-family="monospace" font-size="8" fill="white" font-weight="700" text-anchor="middle">$48.2K</text>
+            <text x="110" y="127" font-family="monospace" font-size="6" fill="#6b7280" text-anchor="middle">Total Spend</text>
+            <rect x="192" y="56" width="12" height="12" rx="2" fill="#4285f4"/>
+            <text x="210" y="66" font-family="monospace" font-size="7" fill="#9ca3af">Google Ads 33%</text>
+            <rect x="192" y="76" width="12" height="12" rx="2" fill="#1877f2"/>
+            <text x="210" y="86" font-family="monospace" font-size="7" fill="#9ca3af">Meta Ads 23%</text>
+            <rect x="192" y="96" width="12" height="12" rx="2" fill="#0077b5"/>
+            <text x="210" y="106" font-family="monospace" font-size="7" fill="#9ca3af">LinkedIn 13%</text>
+            <rect x="192" y="116" width="12" height="12" rx="2" fill="#ffb547"/>
+            <text x="210" y="126" font-family="monospace" font-size="7" fill="#9ca3af">Other 30%</text>
+            <rect x="192" y="148" width="192" height="56" rx="6" fill="#161b22"/>
+            <text x="202" y="163" font-family="monospace" font-size="6" fill="#6b7280">CHANNEL ROAS COMPARISON</text>
+            <rect x="202" y="168" width="44" height="8" rx="2" fill="#4285f4" opacity=".9"/>
+            <text x="250" y="175" font-family="monospace" font-size="6" fill="#9ca3af">4.2x</text>
+            <rect x="202" y="180" width="32" height="8" rx="2" fill="#1877f2" opacity=".7"/>
+            <text x="238" y="187" font-family="monospace" font-size="6" fill="#9ca3af">3.1x</text>
+            <rect x="202" y="192" width="26" height="8" rx="2" fill="#0077b5" opacity=".6"/>
+            <text x="232" y="199" font-family="monospace" font-size="6" fill="#9ca3af">2.5x</text>
+          </svg>
+        </div>
+        <div class="fd-info">
+          <div class="fd-source">Catchr</div>
+          <div class="fd-name">Cross-Channel Marketing Dashboard</div>
+          <div class="fd-meta">
+            <span class="fd-tag">Multi-Channel</span>
+            <span class="fd-tag">Looker Studio</span>
+            <span class="fd-free">Free</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. Databloo — GA4 + Search Console -->
+      <a href="https://www.databloo.com/report-templates/" target="_blank" rel="noopener" class="fd-card">
+        <div class="fd-preview">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="220" fill="#0f1318"/>
+            <rect x="16" y="16" width="368" height="32" rx="6" fill="#161b22"/>
+            <text x="26" y="28" font-family="monospace" font-size="7" fill="#00e5a0" font-weight="700">SEO PERFORMANCE</text>
+            <text x="26" y="40" font-family="monospace" font-size="6" fill="#6b7280">GA4 + Google Search Console · Last 90 Days</text>
+            <rect x="16" y="56" width="176" height="76" rx="6" fill="#161b22"/>
+            <text x="26" y="72" font-family="monospace" font-size="6" fill="#6b7280">ORGANIC CLICKS TREND</text>
+            <polyline points="26,120 56,108 86,114 116,98 146,104 176,88 192,84" fill="none" stroke="#00e5a0" stroke-width="2"/>
+            <polyline points="26,120 56,108 86,114 116,98 146,104 176,88 192,84" fill="url(#seoGrad)" opacity=".15"/>
+            <defs><linearGradient id="seoGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00e5a0"/><stop offset="1" stop-color="transparent"/></linearGradient></defs>
+            <rect x="200" y="56" width="184" height="76" rx="6" fill="#161b22"/>
+            <text x="210" y="72" font-family="monospace" font-size="6" fill="#6b7280">TOP QUERIES BY CLICKS</text>
+            <text x="210" y="86" font-family="monospace" font-size="7" fill="white">looker studio templates</text>
+            <rect x="210" y="90" width="80" height="4" rx="2" fill="#00e5a0" opacity=".6"/>
+            <text x="210" y="104" font-family="monospace" font-size="7" fill="white">google ads dashboard</text>
+            <rect x="210" y="108" width="60" height="4" rx="2" fill="#00e5a0" opacity=".5"/>
+            <text x="210" y="122" font-family="monospace" font-size="7" fill="white">marketing reporting tools</text>
+            <rect x="210" y="126" width="44" height="4" rx="2" fill="#00e5a0" opacity=".4"/>
+            <rect x="16" y="140" width="368" height="64" rx="6" fill="#161b22"/>
+            <text x="26" y="155" font-family="monospace" font-size="6" fill="#6b7280">PAGE PERFORMANCE · CLICKS / IMPRESSIONS / CTR</text>
+            <text x="26" y="170" font-family="monospace" font-size="7" fill="white">/blog/google-ads-templates</text>
+            <text x="280" y="170" font-family="monospace" font-size="7" fill="#00e5a0">2,840</text>
+            <text x="320" y="170" font-family="monospace" font-size="7" fill="#6b7280">48K</text>
+            <text x="358" y="170" font-family="monospace" font-size="7" fill="#ffb547">5.9%</text>
+            <line x1="26" y1="174" x2="384" y2="174" stroke="#1f2937" stroke-width="1"/>
+            <text x="26" y="186" font-family="monospace" font-size="7" fill="white">/marketing-dashboards/</text>
+            <text x="280" y="186" font-family="monospace" font-size="7" fill="#00e5a0">1,920</text>
+            <text x="320" y="186" font-family="monospace" font-size="7" fill="#6b7280">32K</text>
+            <text x="358" y="186" font-family="monospace" font-size="7" fill="#ffb547">6.0%</text>
+            <line x1="26" y1="190" x2="384" y2="190" stroke="#1f2937" stroke-width="1"/>
+            <text x="26" y="199" font-family="monospace" font-size="7" fill="white">/reporting-tools/whatagraph</text>
+            <text x="280" y="199" font-family="monospace" font-size="7" fill="#00e5a0">1,104</text>
+            <text x="320" y="199" font-family="monospace" font-size="7" fill="#6b7280">18K</text>
+            <text x="358" y="199" font-family="monospace" font-size="7" fill="#ffb547">6.1%</text>
+          </svg>
+        </div>
+        <div class="fd-info">
+          <div class="fd-source">Databloo</div>
+          <div class="fd-name">GA4 + Search Console SEO Dashboard</div>
+          <div class="fd-meta">
+            <span class="fd-tag">SEO</span>
+            <span class="fd-tag">GA4</span>
+            <span class="fd-free">Free</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Porter Metrics — Shopify -->
+      <a href="https://portermetrics.com/en/templates/" target="_blank" rel="noopener" class="fd-card">
+        <div class="fd-preview">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="220" fill="#0f1318"/>
+            <text x="16" y="30" font-family="monospace" font-size="8" fill="white" font-weight="700">SHOPIFY STORE OVERVIEW</text>
+            <rect x="16" y="40" width="84" height="64" rx="6" fill="#161b22"/>
+            <text x="26" y="56" font-family="monospace" font-size="6" fill="#6b7280">REVENUE</text>
+            <text x="26" y="72" font-family="monospace" font-size="14" fill="white" font-weight="700">$82K</text>
+            <text x="26" y="84" font-family="monospace" font-size="6" fill="#00e5a0">↑ 24%</text>
+            <rect x="108" y="40" width="84" height="64" rx="6" fill="#161b22"/>
+            <text x="118" y="56" font-family="monospace" font-size="6" fill="#6b7280">ORDERS</text>
+            <text x="118" y="72" font-family="monospace" font-size="14" fill="white" font-weight="700">1,248</text>
+            <text x="118" y="84" font-family="monospace" font-size="6" fill="#00e5a0">↑ 18%</text>
+            <rect x="200" y="40" width="84" height="64" rx="6" fill="#161b22"/>
+            <text x="210" y="56" font-family="monospace" font-size="6" fill="#6b7280">AVG ORDER</text>
+            <text x="210" y="72" font-family="monospace" font-size="14" fill="white" font-weight="700">$65.7</text>
+            <text x="210" y="84" font-family="monospace" font-size="6" fill="#ff6437">↓ 2%</text>
+            <rect x="292" y="40" width="92" height="64" rx="6" fill="#161b22"/>
+            <text x="302" y="56" font-family="monospace" font-size="6" fill="#6b7280">CONV RATE</text>
+            <text x="302" y="72" font-family="monospace" font-size="14" fill="white" font-weight="700">3.2%</text>
+            <text x="302" y="84" font-family="monospace" font-size="6" fill="#00e5a0">↑ 0.4%</text>
+            <rect x="16" y="112" width="368" height="92" rx="6" fill="#161b22"/>
+            <text x="26" y="128" font-family="monospace" font-size="6" fill="#6b7280">REVENUE BY DAY · 30-DAY TREND</text>
+            <polyline points="26,190 56,178 86,182 116,168 146,174 176,160 206,156 236,148 266,152 296,140 326,144 356,132 384,128" fill="none" stroke="#96bf47" stroke-width="2"/>
+            <text x="26" y="200" font-family="monospace" font-size="6" fill="#6b7280">Mar 1</text>
+            <text x="168" y="200" font-family="monospace" font-size="6" fill="#6b7280">Mar 16</text>
+            <text x="356" y="200" font-family="monospace" font-size="6" fill="#6b7280">Mar 31</text>
+          </svg>
+        </div>
+        <div class="fd-info">
+          <div class="fd-source">Porter Metrics</div>
+          <div class="fd-name">Shopify Store Performance Dashboard</div>
+          <div class="fd-meta">
+            <span class="fd-tag">Shopify</span>
+            <span class="fd-tag">Ecommerce</span>
+            <span class="fd-free">Free</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6. Reporting Ninja — LinkedIn Ads -->
+      <a href="https://www.reportingninja.com/looker-studio-templates" target="_blank" rel="noopener" class="fd-card">
+        <div class="fd-preview">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="220" fill="#0f1318"/>
+            <rect x="16" y="16" width="368" height="32" rx="6" fill="#161b22"/>
+            <text x="26" y="28" font-family="monospace" font-size="7" fill="#0077b5" font-weight="700">LINKEDIN ADS DASHBOARD</text>
+            <text x="26" y="40" font-family="monospace" font-size="6" fill="#6b7280">Q1 2025 · All Campaigns · B2B Lead Gen</text>
+            <rect x="16" y="56" width="116" height="68" rx="6" fill="#161b22"/>
+            <text x="26" y="72" font-family="monospace" font-size="6" fill="#6b7280">LEADS GENERATED</text>
+            <text x="26" y="90" font-family="monospace" font-size="20" fill="white" font-weight="700">284</text>
+            <text x="26" y="104" font-family="monospace" font-size="6" fill="#00e5a0">↑ 32% vs prev</text>
+            <rect x="140" y="56" width="116" height="68" rx="6" fill="#161b22"/>
+            <text x="150" y="72" font-family="monospace" font-size="6" fill="#6b7280">COST PER LEAD</text>
+            <text x="150" y="90" font-family="monospace" font-size="20" fill="white" font-weight="700">$48</text>
+            <text x="150" y="104" font-family="monospace" font-size="6" fill="#00e5a0">↓ $12 vs prev</text>
+            <rect x="264" y="56" width="120" height="68" rx="6" fill="#161b22"/>
+            <text x="274" y="72" font-family="monospace" font-size="6" fill="#6b7280">CLICK-THROUGH</text>
+            <text x="274" y="90" font-family="monospace" font-size="20" fill="white" font-weight="700">0.78%</text>
+            <text x="274" y="104" font-family="monospace" font-size="6" fill="#00e5a0">↑ 0.12%</text>
+            <rect x="16" y="132" width="368" height="72" rx="6" fill="#161b22"/>
+            <text x="26" y="148" font-family="monospace" font-size="6" fill="#6b7280">LEADS BY CAMPAIGN TYPE</text>
+            <rect x="26" y="155" width="48" height="36" rx="3" fill="#0077b5" opacity=".9"/>
+            <text x="50" y="200" font-family="monospace" font-size="5" fill="#6b7280" text-anchor="middle">Sponsored</text>
+            <rect x="84" y="162" width="48" height="29" rx="3" fill="#0077b5" opacity=".7"/>
+            <text x="108" y="200" font-family="monospace" font-size="5" fill="#6b7280" text-anchor="middle">InMail</text>
+            <rect x="142" y="168" width="48" height="23" rx="3" fill="#0077b5" opacity=".5"/>
+            <text x="166" y="200" font-family="monospace" font-size="5" fill="#6b7280" text-anchor="middle">Dynamic</text>
+            <rect x="200" y="158" width="48" height="33" rx="3" fill="#0077b5" opacity=".8"/>
+            <text x="224" y="200" font-family="monospace" font-size="5" fill="#6b7280" text-anchor="middle">Lead Gen</text>
+            <rect x="258" y="172" width="48" height="19" rx="3" fill="#0077b5" opacity=".4"/>
+            <text x="282" y="200" font-family="monospace" font-size="5" fill="#6b7280" text-anchor="middle">Text Ads</text>
+            <rect x="316" y="165" width="48" height="26" rx="3" fill="#0077b5" opacity=".6"/>
+            <text x="340" y="200" font-family="monospace" font-size="5" fill="#6b7280" text-anchor="middle">Carousel</text>
+          </svg>
+        </div>
+        <div class="fd-info">
+          <div class="fd-source">Reporting Ninja</div>
+          <div class="fd-name">LinkedIn Ads B2B Lead Gen Dashboard</div>
+          <div class="fd-meta">
+            <span class="fd-tag">LinkedIn Ads</span>
+            <span class="fd-tag">B2B</span>
+            <span class="fd-free">Free</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <a href="/marketing-dashboards/" class="affiliate-cta" style="display:inline-flex">Browse All Templates →</a>
+    </div>
+  </div>
+</section>
+
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
