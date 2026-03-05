@@ -280,11 +280,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="feed-header">
           <div class="feed-title">Latest Updates</div>
           <div class="feed-filters">
-            <button class="filter-btn active" onclick="filterFeed('all',this)">All</button>
-            <button class="filter-btn" onclick="filterFeed('update',this)">Updates</button>
-            <button class="filter-btn" onclick="filterFeed('spotlight',this)">Spotlights</button>
-            <button class="filter-btn" onclick="filterFeed('template',this)">Templates</button>
-            <button class="filter-btn" onclick="filterFeed('compare',this)">Compare</button>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="update">Updates</button>
+            <button class="filter-btn" data-filter="spotlight">Spotlights</button>
+            <button class="filter-btn" data-filter="template">Templates</button>
+            <button class="filter-btn" data-filter="compare">Compare</button>
           </div>
         </div>
 
@@ -766,5 +766,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p><a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/affiliate-disclosure/">Affiliate Disclosure</a></p>
   </div>
 </footer>
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const filter = this.dataset.filter;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    document.querySelectorAll('.post-card').forEach(card => {
+      card.style.display = (filter === 'all' || card.dataset.type === filter) ? '' : 'none';
+    });
+  });
+});
+</script>
 </body>
 </html>
