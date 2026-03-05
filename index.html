@@ -81,6 +81,9 @@ a:hover{opacity:.8}
 .ticker-track{display:flex;gap:3rem;animation:ticker 28s linear infinite;padding-left:2rem;white-space:nowrap}
 .ticker-item{font-family:var(--font-mono);font-size:.72rem;color:var(--text-muted);white-space:nowrap;font-weight:500}
 .ticker-item .up{color:var(--green)}
+.ticker-item{text-decoration:none;transition:color .15s}
+.ticker-item:hover{color:var(--text)}
+.ticker-item:hover .up{color:var(--accent)}
 @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* LAYOUT */
@@ -256,16 +259,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="ticker-label">LIVE UPDATES</div>
     <div class="ticker-wrap">
       <div class="ticker-track">
-        <span class="ticker-item">Whatagraph <span class="up">↑ AI Summaries & chatbot launched Jan 2025</span></span>
-        <span class="ticker-item">Databox <span class="up">↑ OKRs & Forecast Modeling now live</span></span>
-        <span class="ticker-item">Looker Studio <span class="up">↑ Best free marketing dashboard in 2026</span></span>
-        <span class="ticker-item">Supermetrics <span class="up">↑ New flexpoint pricing model</span></span>
-        <span class="ticker-item">Google Ads <span class="up">↑ 7 free Looker Studio templates</span></span>
-        <span class="ticker-item">Whatagraph <span class="up">↑ AI Summaries & chatbot launched Jan 2025</span></span>
-        <span class="ticker-item">Databox <span class="up">↑ OKRs & Forecast Modeling now live</span></span>
-        <span class="ticker-item">Looker Studio <span class="up">↑ Best free marketing dashboard in 2026</span></span>
-        <span class="ticker-item">Supermetrics <span class="up">↑ New flexpoint pricing model</span></span>
-        <span class="ticker-item">Klipfolio <span class="up">↑ New PowerMetrics tier</span></span>
+        <a class="ticker-item" href="/blog/whatagraph-ai-summaries-2025/">Whatagraph <span class="up">↑ AI Summaries & chatbot launched Jan 2025</span></a>
+        <a class="ticker-item" href="/blog/databox-okrs-forecast-modeling/">Databox <span class="up">↑ OKRs & Forecast Modeling now live</span></a>
+        <a class="ticker-item" href="/blog/looker-studio-best-free-dashboard-2026/">Looker Studio <span class="up">↑ Best free marketing dashboard in 2026</span></a>
+        <a class="ticker-item" href="/blog/supermetrics-flexpoint-pricing-2025/">Supermetrics <span class="up">↑ New flexpoint pricing model</span></a>
+        <a class="ticker-item" href="/blog/google-ads-dashboard-templates-looker-studio/">Google Ads <span class="up">↑ 7 free Looker Studio templates</span></a>
+        <a class="ticker-item" href="/blog/whatagraph-ai-summaries-2025/">Whatagraph <span class="up">↑ AI Summaries & chatbot launched Jan 2025</span></a>
+        <a class="ticker-item" href="/blog/databox-okrs-forecast-modeling/">Databox <span class="up">↑ OKRs & Forecast Modeling now live</span></a>
+        <a class="ticker-item" href="/blog/looker-studio-best-free-dashboard-2026/">Looker Studio <span class="up">↑ Best free marketing dashboard in 2026</span></a>
+        <a class="ticker-item" href="/blog/supermetrics-flexpoint-pricing-2025/">Supermetrics <span class="up">↑ New flexpoint pricing model</span></a>
+        <a class="ticker-item" href="/reporting-tools/klipfolio/">Klipfolio <span class="up">↑ New PowerMetrics tier</span></a>
       </div>
     </div>
   </div>
