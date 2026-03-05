@@ -207,6 +207,19 @@ a:hover{opacity:.8}
 .fd-meta{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center}
 .fd-tag{font-family:var(--font-mono);font-size:.58rem;background:var(--bg-elevated);color:var(--text-muted);padding:.15rem .45rem;border-radius:3px;border:1px solid var(--border)}
 .fd-free{font-family:var(--font-mono);font-size:.58rem;background:rgba(0,229,160,.1);color:var(--green);padding:.15rem .45rem;border-radius:3px;border:1px solid rgba(0,229,160,.2);font-weight:700}
+
+/* ── Value Prop Section ──────────────────────────── */
+.value-section{padding:5rem 0;border-top:1px solid var(--border)}
+.value-header{text-align:center;max-width:620px;margin:0 auto 3rem}
+.value-title{font-size:2rem;font-weight:700;line-height:1.2;letter-spacing:-.02em;margin:.5rem 0 .75rem}
+.value-sub{font-size:.95rem;color:var(--text-muted);line-height:1.65}
+.value-hero-img{margin-bottom:3.5rem;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.value-pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+@media(max-width:900px){.value-pillars{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.value-pillars{grid-template-columns:1fr}}
+.value-pillar{display:flex;flex-direction:column;gap:.75rem}
+.value-pillar h3{font-size:1rem;font-weight:700;color:var(--text);margin:0}
+.value-pillar p{font-size:.85rem;color:var(--text-muted);line-height:1.6;margin:0}
 </style>
 </head>
 <body>
@@ -381,6 +394,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ═══════════════════════════════════════════════════
      PAGE 2: TOOLS DIRECTORY
 ════════════════════════════════════════════════════ --></main>
+
+
+<!-- VALUE PROP SECTION -->
+<section class="value-section">
+  <div class="page-wrap">
+
+    <div class="value-header">
+      <div class="section-label">WHY MARKETINGREPORTS.IO</div>
+      <h2 class="value-title">Stop Building Dashboards.<br>Start Making Decisions.</h2>
+      <p class="value-sub">Every minute spent formatting a report is a minute not spent on what drives growth. We've done the heavy lifting — free templates, honest tool reviews, and weekly updates so you're always ahead.</p>
+    </div>
+
+    <div class="value-hero-img">
+      <img src="/dashboard-hero.svg" alt="Marketing dashboard examples" style="width:100%;display:block;border-radius:12px">
+    </div>
+
+    <div class="value-pillars">
+
+      <div class="value-pillar">
+        <img src="/icon-turnkey.svg" alt="" width="70" height="70">
+        <h3>Copy-Ready Templates</h3>
+        <p>Pre-built Looker Studio dashboards for every major platform — Google Ads, Meta, LinkedIn, Shopify, and more. One click to copy, connect your data, and you're live.</p>
+      </div>
+
+      <div class="value-pillar">
+        <img src="/icon-integrations.svg" alt="" width="70" height="70">
+        <h3>Cross-Platform Insights</h3>
+        <p>Stop switching tabs. Our templates pull data from 40+ platforms into a single unified view — so you see the full picture, not just one channel at a time.</p>
+      </div>
+
+      <div class="value-pillar">
+        <img src="/icon-automated.svg" alt="" width="70" height="70">
+        <h3>Always Up to Date</h3>
+        <p>Connected dashboards refresh automatically. No more manual exports, no more stale spreadsheets. Your clients and stakeholders always see live data.</p>
+      </div>
+
+      <div class="value-pillar">
+        <img src="/icon-fast.svg" alt="" width="70" height="70">
+        <h3>Honest Tool Reviews</h3>
+        <p>We independently review every major reporting platform — Whatagraph, Databox, Supermetrics, and more — so you pick the right tool for your stack, not the most advertised one.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <!-- FEATURED DASHBOARDS SECTION -->
 <section class="featured-dashboards">
