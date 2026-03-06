@@ -226,6 +226,22 @@ a:hover{opacity:.8}
 .value-pillar{display:flex;flex-direction:column;gap:.75rem}
 .value-pillar h3{font-size:1rem;font-weight:700;color:var(--text);margin:0}
 .value-pillar p{font-size:.85rem;color:var(--text-muted);line-height:1.6;margin:0}
+
+/* ── Mobile overflow fixes ── */
+html,body{overflow-x:hidden;max-width:100%}
+@media(max-width:768px){
+  .nav-cta{display:none!important}
+  .main-nav{gap:.1rem}
+  .header-inner{padding:0 1rem}
+  .page-wrap{padding:0 1rem}
+  .tool-hero{flex-wrap:wrap}
+  .tool-cta-row{flex-wrap:wrap;gap:.75rem}
+  .affiliate-cta{white-space:nowrap;font-size:.65rem!important;padding:.45rem .85rem}
+  .post-cta-block{flex-direction:column;align-items:flex-start}
+  .footer-inner{grid-template-columns:1fr 1fr!important}
+  .two-col{grid-template-columns:1fr!important}
+  .home-hero{padding:2rem 0 1rem}
+}
 </style>
 </head>
 <body>

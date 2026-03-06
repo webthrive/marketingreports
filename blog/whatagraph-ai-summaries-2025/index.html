@@ -209,6 +209,22 @@ a:hover{opacity:.8}
 .post-cta-text p{margin:0;font-size:.85rem;color:var(--text-muted);margin-top:.3rem}
 .post-cta-text strong{color:var(--text);font-size:.95rem}
 
+
+/* ── Mobile overflow fixes ── */
+html,body{overflow-x:hidden;max-width:100%}
+@media(max-width:768px){
+  .nav-cta{display:none!important}
+  .main-nav{gap:.1rem}
+  .header-inner{padding:0 1rem}
+  .page-wrap{padding:0 1rem}
+  .tool-hero{flex-wrap:wrap}
+  .tool-cta-row{flex-wrap:wrap;gap:.75rem}
+  .affiliate-cta{white-space:nowrap;font-size:.65rem!important;padding:.45rem .85rem}
+  .post-cta-block{flex-direction:column;align-items:flex-start}
+  .footer-inner{grid-template-columns:1fr 1fr!important}
+  .two-col{grid-template-columns:1fr!important}
+  .home-hero{padding:2rem 0 1rem}
+}
 </style>
 </head>
 <body>
