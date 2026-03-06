@@ -190,6 +190,12 @@ a:hover{opacity:.8}
 
 /* PAGE CONTENT AREAS */
 .page-content{display:none}.page-content.active{display:block}
+
+.breadcrumb{display:flex;align-items:center;gap:.4rem;font-family:var(--font-mono);font-size:.7rem;color:var(--text-dim);padding:1.2rem 0 .5rem;flex-wrap:wrap}
+.breadcrumb a{color:var(--text-dim);text-decoration:none;transition:color .15s}
+.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb-sep{color:var(--text-dim);opacity:.4}
+.breadcrumb-current{color:var(--text-muted)}
 </style>
 </head>
 <body>
@@ -215,8 +221,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div style="display:flex;gap:.5rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(0,212,255,.1);color:var(--accent)">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green)">Free Templates</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(255,181,71,.1);color:var(--amber)">Mailchimp</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(120,120,120,.1);color:var(--text-muted)">Klaviyo</span></div>
     </div>
     <div style="padding:2rem 0 1rem;max-width:100%">
-      <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">What Makes a Good Email Marketing Dashboard?</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7">Email marketing templates should track open rate, click rate, click-to-open rate (CTOR), unsubscribe rate, bounce rate, deliverability, list growth, and revenue per email. The most useful templates blend email performance with ecommerce data (Shopify, WooCommerce) to show actual revenue attribution — not just open rates.</p>
+      <h2 style="font-family:var(--font-mono);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">What Makes a Good Email Marketing Dashboard?</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8">Email marketing templates should track open rate, click rate, click-to-open rate (CTOR), unsubscribe rate, bounce rate, deliverability, list growth, and revenue per email. The most useful templates blend email performance with ecommerce data (Shopify, WooCommerce) to show actual revenue attribution — not just open rates.</p>
     </div>
     <div style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;color:var(--text-dim);text-transform:uppercase;letter-spacing:.1em;padding:.5rem 0 1rem;border-bottom:1px solid var(--border);margin-bottom:1.5rem">5 Templates · Sorted by Usefulness</div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:3rem">
@@ -228,15 +234,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(255,181,71,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#ffb547;flex-shrink:0">SM</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Mailchimp Email Marketing Report</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Supermetrics</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Mailchimp Email Marketing Report</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Supermetrics</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Tracks open rate, click rate, unsubscribes, list growth, and campaign performance over time from Mailchimp. Compare campaigns, segment by list, and identify trends in deliverability.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Mailchimp</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Open rate</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Deliverability</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Tracks open rate, click rate, unsubscribes, list growth, and campaign performance over time from Mailchimp. Compare campaigns, segment by list, and identify trends in deliverability.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Mailchimp</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Open rate</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Deliverability</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://blog.coupler.io/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -244,17 +250,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem">
           <div style="display:flex;align-items:center;gap:.6rem">
-            <div style="width:32px;height:32px;border-radius:7px;background:rgba(66,133,244,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#4285f4;flex-shrink:0">LS</div>
+            <div style="width:32px;height:32px;border-radius:7px;background:rgba(66,133,244,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.65rem;font-weight:700;color:#4285f4;flex-shrink:0">LS</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Mailchimp Email + Shopify Revenue Dashboard</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Mailchimp Email + Shopify Revenue Dashboard</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Connects Mailchimp campaign data with Shopify to show which email sends drive orders and revenue. Track click-to-purchase rate, revenue per email, and list segment performance.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Mailchimp + Shopify</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Revenue attribution</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Connects Mailchimp campaign data with Shopify to show which email sends drive orders and revenue. Track click-to-purchase rate, revenue per email, and list segment performance.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Mailchimp + Shopify</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Revenue attribution</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://portermetrics.com/en/templates/email-marketing/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -264,15 +270,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(0,229,160,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:var(--green);flex-shrink:0">PM</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Klaviyo Email & SMS Performance Report</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Porter Metrics</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Klaviyo Email & SMS Performance Report</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Porter Metrics</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Klaviyo-specific dashboard tracking email and SMS open rate, CTR, revenue per recipient, list growth, and flow vs campaign performance. White-label ready for ecommerce agencies.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Klaviyo</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">SMS</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Ecommerce email</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Klaviyo-specific dashboard tracking email and SMS open rate, CTR, revenue per recipient, list growth, and flow vs campaign performance. White-label ready for ecommerce agencies.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Klaviyo</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">SMS</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Ecommerce email</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://www.catchr.io/template/looker-studio-templates/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -282,15 +288,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(180,100,255,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#b464ff;flex-shrink:0">CA</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Email Marketing KPI Dashboard</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Catchr</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Email Marketing KPI Dashboard</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Catchr</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Universal email dashboard works with Mailchimp, Klaviyo, and HubSpot. Tracks opens, clicks, conversions, unsubscribe rate, and list health. 80+ connectors — Catchr is an official Looker Studio Partner.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Multi-ESP</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">KPI overview</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Universal email dashboard works with Mailchimp, Klaviyo, and HubSpot. Tracks opens, clicks, conversions, unsubscribe rate, and list health. 80+ connectors — Catchr is an official Looker Studio Partner.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Multi-ESP</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">KPI overview</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://blog.coupler.io/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -298,25 +304,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem">
           <div style="display:flex;align-items:center;gap:.6rem">
-            <div style="width:32px;height:32px;border-radius:7px;background:rgba(66,133,244,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#4285f4;flex-shrink:0">LS</div>
+            <div style="width:32px;height:32px;border-radius:7px;background:rgba(66,133,244,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.65rem;font-weight:700;color:#4285f4;flex-shrink:0">LS</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">ActiveCampaign CRM + Email Report</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">ActiveCampaign CRM + Email Report</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Tracks ActiveCampaign email sends, automations, and CRM pipeline data in one Looker Studio dashboard. Ideal for B2B and SaaS teams using ActiveCampaign for both email marketing and sales CRM.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">ActiveCampaign</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">CRM + Email</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Tracks ActiveCampaign email sends, automations, and CRM pipeline data in one Looker Studio dashboard. Ideal for B2B and SaaS teams using ActiveCampaign for both email marketing and sales CRM.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">ActiveCampaign</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">CRM + Email</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
     </div>
     <div style="max-width:100%;padding-bottom:4rem">
-      <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Does My ESP Have a Native Looker Studio Connector?</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem">No — Mailchimp, Klaviyo, HubSpot, and ActiveCampaign do not have native Looker Studio connectors. All templates below require a third-party connector like Supermetrics, Porter, Catchr, or Coupler.io.</p>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1.5rem">Klaviyo and Mailchimp connectors from Porter Metrics start at $15/month. For agencies managing multiple email accounts, Supermetrics' multi-account plans are more cost-effective.</p>
+      <h2 style="font-family:var(--font-mono);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Does My ESP Have a Native Looker Studio Connector?</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1rem">No — Mailchimp, Klaviyo, HubSpot, and ActiveCampaign do not have native Looker Studio connectors. All templates below require a third-party connector like Supermetrics, Porter, Catchr, or Coupler.io.</p>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1.5rem">Klaviyo and Mailchimp connectors from Porter Metrics start at $15/month. For agencies managing multiple email accounts, Supermetrics' multi-account plans are more cost-effective.</p>
       <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin:1.75rem 0 .65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Want Fully Automated Email Marketing Reporting?</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem">Templates are a great start — but if you need scheduled PDF delivery, white-labeling, and zero maintenance, consider a dedicated reporting tool:</p>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1rem">Templates are a great start — but if you need scheduled PDF delivery, white-labeling, and zero maintenance, consider a dedicated reporting tool:</p>
       <div style="display:flex;gap:1rem;flex-wrap:wrap">
         <a href="https://whatagraph.com/?fpr=marketingreports" class="affiliate-cta" target="_blank" rel="noopener nofollow" style="font-size:.65rem;padding:.45rem .9rem">Try Whatagraph →</a>
         <a href="https://databox.com/?utm_source=marketingreports" class="affiliate-cta" target="_blank" rel="noopener nofollow" style="font-size:.65rem;padding:.45rem .9rem;background:var(--bg-elevated);color:var(--text);box-shadow:none;border:1px solid var(--border)">Try Databox →</a>

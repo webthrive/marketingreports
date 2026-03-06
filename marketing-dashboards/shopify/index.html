@@ -190,6 +190,12 @@ a:hover{opacity:.8}
 
 /* PAGE CONTENT AREAS */
 .page-content{display:none}.page-content.active{display:block}
+
+.breadcrumb{display:flex;align-items:center;gap:.4rem;font-family:var(--font-mono);font-size:.7rem;color:var(--text-dim);padding:1.2rem 0 .5rem;flex-wrap:wrap}
+.breadcrumb a{color:var(--text-dim);text-decoration:none;transition:color .15s}
+.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb-sep{color:var(--text-dim);opacity:.4}
+.breadcrumb-current{color:var(--text-muted)}
 </style>
 </head>
 <body>
@@ -215,8 +221,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div style="display:flex;gap:.5rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(0,212,255,.1);color:var(--accent)">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green)">Free Templates</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(255,181,71,.1);color:var(--amber)">Ecommerce</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(120,120,120,.1);color:var(--text-muted)">GA4 + Shopify</span></div>
     </div>
     <div style="padding:2rem 0 1rem;max-width:100%">
-      <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">What Makes a Good Shopify Dashboard Template?</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7">The best Shopify templates go beyond total revenue. They track conversion rate by traffic source, average order value trends, cart abandonment rates, top-performing products, inventory health, and refund/return rates. The most powerful templates blend Shopify data with GA4 (for traffic funnel analysis) and paid media data (to calculate true ROAS). Shopify does not have a native Looker Studio connector — all templates below require a third-party connector.</p>
+      <h2 style="font-family:var(--font-mono);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">What Makes a Good Shopify Dashboard Template?</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8">The best Shopify templates go beyond total revenue. They track conversion rate by traffic source, average order value trends, cart abandonment rates, top-performing products, inventory health, and refund/return rates. The most powerful templates blend Shopify data with GA4 (for traffic funnel analysis) and paid media data (to calculate true ROAS). Shopify does not have a native Looker Studio connector — all templates below require a third-party connector.</p>
     </div>
     <div style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;color:var(--text-dim);text-transform:uppercase;letter-spacing:.1em;padding:.5rem 0 1rem;border-bottom:1px solid var(--border);margin-bottom:1.5rem">7 Templates · Sorted by Usefulness</div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:3rem">
@@ -228,15 +234,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(150,191,71,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#96bf47;flex-shrink:0">LS</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Shopify Sales Performance Dashboard</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Shopify Sales Performance Dashboard</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Tracks total sales, orders, discounts, average order value, and order processing time. Filters by country, traffic source, and financial status. Includes order breakdown table. Auto-refreshes via Coupler.io connector.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Sales</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Orders</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">AOV</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Tracks total sales, orders, discounts, average order value, and order processing time. Filters by country, traffic source, and financial status. Includes order breakdown table. Auto-refreshes via Coupler.io connector.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Sales</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Orders</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">AOV</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://supermetrics.com/template-gallery/looker-studio-shopify-overview-report" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -246,15 +252,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(255,181,71,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#ffb547;flex-shrink:0">SM</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Shopify Overview Report</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Supermetrics</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Shopify Overview Report</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Supermetrics</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Organized view of Shopify sales, inventory quantity, returns, product details, and customer behavior. Integrates with web analytics and paid media for a full ecommerce view. Requires Supermetrics connector.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Inventory</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Customer behavior</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Organized view of Shopify sales, inventory quantity, returns, product details, and customer behavior. Integrates with web analytics and paid media for a full ecommerce view. Requires Supermetrics connector.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Inventory</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Customer behavior</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://portermetrics.com/en/templates/google-looker-studio/free-shopify-template/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -264,15 +270,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(0,229,160,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:var(--green);flex-shrink:0">PM</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Shopify Store Performance Dashboard</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Porter Metrics</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Shopify Store Performance Dashboard</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Porter Metrics</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Tracks conversion rates, average order value, and customer acquisition cost by product category and marketing channel. Answers: which channel drives the highest conversion rate? Which products are underperforming?</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Conversion rate</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Marketing channels</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Products</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Tracks conversion rates, average order value, and customer acquisition cost by product category and marketing channel. Answers: which channel drives the highest conversion rate? Which products are underperforming?</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Conversion rate</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Marketing channels</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Products</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://blog.coupler.io/shopify-looker-studio-templates/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -280,17 +286,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem">
           <div style="display:flex;align-items:center;gap:.6rem">
-            <div style="width:32px;height:32px;border-radius:7px;background:rgba(66,133,244,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#4285f4;flex-shrink:0">LS</div>
+            <div style="width:32px;height:32px;border-radius:7px;background:rgba(66,133,244,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.65rem;font-weight:700;color:#4285f4;flex-shrink:0">LS</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Shopify + GA4 Traffic & Funnel Dashboard</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Shopify + GA4 Traffic & Funnel Dashboard</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Combines Shopify sales data with GA4 traffic data to show the full funnel: sessions → views → add-to-cart → checkout → purchases. Identifies where drop-offs occur month-over-month.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">GA4 + Shopify</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Funnel</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Traffic sources</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Combines Shopify sales data with GA4 traffic data to show the full funnel: sessions → views → add-to-cart → checkout → purchases. Identifies where drop-offs occur month-over-month.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">GA4 + Shopify</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Funnel</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Traffic sources</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://blog.coupler.io/shopify-looker-studio-templates/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -300,15 +306,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(150,191,71,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#96bf47;flex-shrink:0">LS</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Shopify Inventory Management Dashboard</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Shopify Inventory Management Dashboard</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Tracks stock levels, turnover rates, sales correlations, and low-stock alerts by product and location. Includes multi-location inventory support. Helps prevent costly stockouts and overstock.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Inventory</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Stock alerts</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Multi-location</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Tracks stock levels, turnover rates, sales correlations, and low-stock alerts by product and location. Includes multi-location inventory support. Helps prevent costly stockouts and overstock.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Inventory</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Stock alerts</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Multi-location</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://windsor.ai/looker-studio-shopify-dashboard-template/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -318,15 +324,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(0,212,255,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:var(--accent);flex-shrink:0">WA</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Shopify Dashboard (Windsor.ai)</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Windsor.ai</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Shopify Dashboard (Windsor.ai)</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Windsor.ai</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Clean macro-level view of store performance — total revenue, top customers, and best-selling products. Easy setup via Windsor.ai connector (30-day free trial). Good starting template for Shopify store owners.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Revenue</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Top products</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Clean macro-level view of store performance — total revenue, top customers, and best-selling products. Easy setup via Windsor.ai connector (30-day free trial). Good starting template for Shopify store owners.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Revenue</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Top products</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://supermetrics.com/template-gallery/looker-studio-ecommerce-dashboard" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -336,23 +342,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(255,181,71,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#ffb547;flex-shrink:0">SM</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Ecommerce Reporting Dashboard (Multi-channel)</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Supermetrics</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Ecommerce Reporting Dashboard (Multi-channel)</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Supermetrics</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Combines Shopify + web analytics + paid media channels (Google Ads, Meta Ads) to show how campaigns drive ecommerce conversions. Full-funnel view from ad click to purchase. Requires Supermetrics.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Multi-channel</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">ROAS</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Full-funnel</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Combines Shopify + web analytics + paid media channels (Google Ads, Meta Ads) to show how campaigns drive ecommerce conversions. Full-funnel view from ad click to purchase. Requires Supermetrics.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Multi-channel</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">ROAS</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Full-funnel</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
     </div>
     <div style="max-width:100%;padding-bottom:4rem">
-      <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Shopify Native Analytics vs Looker Studio Templates</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem">Shopify's built-in analytics are limited: no custom date blending, no cross-channel view, and you can't blend traffic data with sales data. Looker Studio templates fix all of this — but require a connector like Coupler.io, Porter, Supermetrics, or Windsor.ai.</p>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1.5rem">Most connectors charge $15–50/month after their free trial. For stores doing significant revenue, the time savings and cross-channel visibility are worth it within the first week.</p>
+      <h2 style="font-family:var(--font-mono);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Shopify Native Analytics vs Looker Studio Templates</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1rem">Shopify's built-in analytics are limited: no custom date blending, no cross-channel view, and you can't blend traffic data with sales data. Looker Studio templates fix all of this — but require a connector like Coupler.io, Porter, Supermetrics, or Windsor.ai.</p>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1.5rem">Most connectors charge $15–50/month after their free trial. For stores doing significant revenue, the time savings and cross-channel visibility are worth it within the first week.</p>
       <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin:1.75rem 0 .65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Want Fully Automated Shopify Reporting?</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem">Templates are a great start — but if you need scheduled PDF delivery, white-labeling, and zero maintenance, consider a dedicated reporting tool:</p>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1rem">Templates are a great start — but if you need scheduled PDF delivery, white-labeling, and zero maintenance, consider a dedicated reporting tool:</p>
       <div style="display:flex;gap:1rem;flex-wrap:wrap">
         <a href="https://whatagraph.com/?fpr=marketingreports" class="affiliate-cta" target="_blank" rel="noopener nofollow" style="font-size:.65rem;padding:.45rem .9rem">Try Whatagraph →</a>
         <a href="https://databox.com/?utm_source=marketingreports" class="affiliate-cta" target="_blank" rel="noopener nofollow" style="font-size:.65rem;padding:.45rem .9rem;background:var(--bg-elevated);color:var(--text);box-shadow:none;border:1px solid var(--border)">Try Databox →</a>

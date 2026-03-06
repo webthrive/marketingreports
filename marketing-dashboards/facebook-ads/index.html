@@ -190,6 +190,12 @@ a:hover{opacity:.8}
 
 /* PAGE CONTENT AREAS */
 .page-content{display:none}.page-content.active{display:block}
+
+.breadcrumb{display:flex;align-items:center;gap:.4rem;font-family:var(--font-mono);font-size:.7rem;color:var(--text-dim);padding:1.2rem 0 .5rem;flex-wrap:wrap}
+.breadcrumb a{color:var(--text-dim);text-decoration:none;transition:color .15s}
+.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb-sep{color:var(--text-dim);opacity:.4}
+.breadcrumb-current{color:var(--text-muted)}
 </style>
 </head>
 <body>
@@ -215,8 +221,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div style="display:flex;gap:.5rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(0,212,255,.1);color:var(--accent)">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green)">Free Templates</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(24,119,242,.1);color:#1877f2;background:rgba(24,119,242">Meta Ads</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(120,120,120,.1);color:var(--text-muted)">Auto-Updated</span></div>
     </div>
     <div style="padding:2rem 0 1rem;max-width:100%">
-      <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">What Makes a Good Facebook Ads Dashboard Template?</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7">The best templates track full-funnel metrics: reach, impressions, frequency, link clicks, CTR, CPC, CPM, conversions, cost per result, and ROAS. They should connect directly to your Meta Ads account (not require CSV exports), update automatically, and be filterable by campaign, ad set, ad creative, and audience. Templates marked Free* require a paid connector — usually Supermetrics or Catchr — after a free trial.</p>
+      <h2 style="font-family:var(--font-mono);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">What Makes a Good Facebook Ads Dashboard Template?</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8">The best templates track full-funnel metrics: reach, impressions, frequency, link clicks, CTR, CPC, CPM, conversions, cost per result, and ROAS. They should connect directly to your Meta Ads account (not require CSV exports), update automatically, and be filterable by campaign, ad set, ad creative, and audience. Templates marked Free* require a paid connector — usually Supermetrics or Catchr — after a free trial.</p>
     </div>
     <div style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;color:var(--text-dim);text-transform:uppercase;letter-spacing:.1em;padding:.5rem 0 1rem;border-bottom:1px solid var(--border);margin-bottom:1.5rem">8 Templates · Sorted by Usefulness</div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:3rem">
@@ -228,15 +234,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(24,119,242,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#1877f2;flex-shrink:0">LS</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Facebook Ads Performance Overview</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Facebook Ads Performance Overview</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Campaign-level overview covering spend, impressions, clicks, CTR, CPC, and conversions. Filters by campaign, ad set, and date. Auto-refreshes daily via Coupler.io connector. No credit card required for free trial.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Campaign overview</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Creative</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Campaign-level overview covering spend, impressions, clicks, CTR, CPC, and conversions. Filters by campaign, ad set, and date. Auto-refreshes daily via Coupler.io connector. No credit card required for free trial.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Campaign overview</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Creative</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://supermetrics.com/template-gallery/looker-studio-facebook-instagram-ads" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -246,15 +252,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(255,181,71,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#ffb547;flex-shrink:0">SM</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Facebook & Instagram Ads Report</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Supermetrics</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Facebook & Instagram Ads Report</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Supermetrics</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Covers Facebook and Instagram Ads together — plus WhatsApp and Messenger. Audience breakdown by age, gender, and location. Best for teams already paying for Supermetrics. 14-day free trial.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Instagram</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Demographics</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Covers Facebook and Instagram Ads together — plus WhatsApp and Messenger. Audience breakdown by age, gender, and location. Best for teams already paying for Supermetrics. 14-day free trial.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Instagram</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Demographics</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://portermetrics.com/en/templates/facebook-ads/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -264,15 +270,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(0,229,160,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:var(--green);flex-shrink:0">PM</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Facebook Ads KPI Tracker & Funnel Templates</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Porter Metrics · Used by 10,000+ teams</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Facebook Ads KPI Tracker & Funnel Templates</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Porter Metrics · Used by 10,000+ teams</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">80+ free white-label templates including a Facebook Ads KPI tracker, funnel analysis, creative performance, and budget pacing dashboard. All white-label ready — swap in your logo and brand colors.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Funnel</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Creative</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">White-label</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View templates →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">80+ free white-label templates including a Facebook Ads KPI tracker, funnel analysis, creative performance, and budget pacing dashboard. All white-label ready — swap in your logo and brand colors.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Funnel</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Creative</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">White-label</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View templates →</div>
       </a>
       <a href="https://www.catchr.io/template/looker-studio-templates/facebook-ads" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -282,15 +288,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(180,100,255,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#b464ff;flex-shrink:0">CA</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Facebook Ads KPIs — 10+ Templates</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Catchr (Official Looker Studio Partner)</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Facebook Ads KPIs — 10+ Templates</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Catchr (Official Looker Studio Partner)</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">10+ templates covering KPI overview, ad creative analysis, audience demographics, funnel tracking, and cross-channel reporting combining Facebook, Google, and Instagram. Official Looker Studio Partner.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Audiences</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Cross-channel</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View templates →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">10+ templates covering KPI overview, ad creative analysis, audience demographics, funnel tracking, and cross-channel reporting combining Facebook, Google, and Instagram. Official Looker Studio Partner.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Audiences</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Cross-channel</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View templates →</div>
       </a>
       <a href="https://windsor.ai/looker-studio-facebook-ads-dashboard-template/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -300,15 +306,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(0,212,255,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:var(--accent);flex-shrink:0">WA</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Facebook Ads Dashboard (Windsor.ai)</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Windsor.ai</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Facebook Ads Dashboard (Windsor.ai)</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Windsor.ai</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Clean single-page dashboard with spend, clicks, CTR, CPC, CPM, and conversion tracking. Uses Windsor.ai connector — free 30-day trial with no credit card. Good for freelancers and small agencies.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Spend tracking</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">CTR</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Clean single-page dashboard with spend, clicks, CTR, CPC, CPM, and conversion tracking. Uses Windsor.ai connector — free 30-day trial with no credit card. Good for freelancers and small agencies.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Spend tracking</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">CTR</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://www.databloo.com/report-templates/facebook-ads/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -318,15 +324,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(255,181,71,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:var(--amber);flex-shrink:0">DB</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Facebook Ads Pro Report (Multi-Page)</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Data Bloo</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Facebook Ads Pro Report (Multi-Page)</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Data Bloo</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(255,181,71,.12);color:var(--amber);white-space:nowrap;flex-shrink:0">€149</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(255,181,71,.12);color:var(--amber);white-space:nowrap;flex-shrink:0">€149</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Premium multi-page template with campaign, audience demographic, and creative breakdowns. Praised for clean agency-ready design. Includes time-series trends and a side-by-side campaign comparison view.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Agency-ready</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Demographics</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Multi-page</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--amber);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Premium multi-page template with campaign, audience demographic, and creative breakdowns. Praised for clean agency-ready design. Includes time-series trends and a side-by-side campaign comparison view.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Agency-ready</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Demographics</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Multi-page</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--amber);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://www.dataslayer.ai/blog/meta-ads-performance-dashboard" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -336,15 +342,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(255,95,126,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:var(--red);flex-shrink:0">DS</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Meta Ads Performance Dashboard</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Dataslayer</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Meta Ads Performance Dashboard</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Dataslayer</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Combines Facebook and Instagram Ads data. Tracks spend, ROAS, creative performance, and conversion paths. Requires Dataslayer connector (15-day free trial, no credit card). Native connector option also available.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">ROAS</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Creative</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Combines Facebook and Instagram Ads data. Tracks spend, ROAS, creative performance, and conversion paths. Requires Dataslayer connector (15-day free trial, no credit card). Native connector option also available.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">ROAS</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Creative</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://blog.coupler.io/looker-studio-facebook-ads-templates/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -354,23 +360,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(24,119,242,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#1877f2;flex-shrink:0">LS</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Facebook Ads Lead Generation Dashboard</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Facebook Ads Lead Generation Dashboard</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Focused on B2B and lead gen campaigns — tracks cost per lead, lead value, conversion rates, and funnel performance. Shows how campaigns convert impressions to form fills and qualified leads.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Lead gen</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">B2B</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Funnel</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Focused on B2B and lead gen campaigns — tracks cost per lead, lead value, conversion rates, and funnel performance. Shows how campaigns convert impressions to form fills and qualified leads.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Lead gen</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">B2B</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Funnel</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
     </div>
     <div style="max-width:100%;padding-bottom:4rem">
-      <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Free vs Paid: Which Template Should You Use?</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem">If you only run Facebook and Instagram Ads, the native Meta connector in Looker Studio works fine — but it's limited to one account and basic dimensions. For multi-account agencies or cross-channel reporting (Facebook + Google + LinkedIn in one view), a paid connector like Supermetrics, Catchr, or Coupler.io is worth the cost.</p>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1.5rem">Templates marked <strong style="color:var(--text)">Free*</strong> require a third-party connector — free during trial, then paid. Expect $30–100/month depending on the tool and plan.</p>
+      <h2 style="font-family:var(--font-mono);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Free vs Paid: Which Template Should You Use?</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1rem">If you only run Facebook and Instagram Ads, the native Meta connector in Looker Studio works fine — but it's limited to one account and basic dimensions. For multi-account agencies or cross-channel reporting (Facebook + Google + LinkedIn in one view), a paid connector like Supermetrics, Catchr, or Coupler.io is worth the cost.</p>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1.5rem">Templates marked <strong style="color:var(--text)">Free*</strong> require a third-party connector — free during trial, then paid. Expect $30–100/month depending on the tool and plan.</p>
       <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin:1.75rem 0 .65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Want Fully Automated Facebook Ads Reporting?</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem">Templates are a great start — but if you need scheduled PDF delivery, white-labeling, and zero maintenance, consider a dedicated reporting tool:</p>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1rem">Templates are a great start — but if you need scheduled PDF delivery, white-labeling, and zero maintenance, consider a dedicated reporting tool:</p>
       <div style="display:flex;gap:1rem;flex-wrap:wrap">
         <a href="https://whatagraph.com/?fpr=marketingreports" class="affiliate-cta" target="_blank" rel="noopener nofollow" style="font-size:.65rem;padding:.45rem .9rem">Try Whatagraph →</a>
         <a href="https://databox.com/?utm_source=marketingreports" class="affiliate-cta" target="_blank" rel="noopener nofollow" style="font-size:.65rem;padding:.45rem .9rem;background:var(--bg-elevated);color:var(--text);box-shadow:none;border:1px solid var(--border)">Try Databox →</a>

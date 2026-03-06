@@ -190,6 +190,12 @@ a:hover{opacity:.8}
 
 /* PAGE CONTENT AREAS */
 .page-content{display:none}.page-content.active{display:block}
+
+.breadcrumb{display:flex;align-items:center;gap:.4rem;font-family:var(--font-mono);font-size:.7rem;color:var(--text-dim);padding:1.2rem 0 .5rem;flex-wrap:wrap}
+.breadcrumb a{color:var(--text-dim);text-decoration:none;transition:color .15s}
+.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb-sep{color:var(--text-dim);opacity:.4}
+.breadcrumb-current{color:var(--text-muted)}
 </style>
 </head>
 <body>
@@ -215,8 +221,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div style="display:flex;gap:.5rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(0,212,255,.1);color:var(--accent)">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green)">Free Templates</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(255,181,71,.1);color:var(--amber)">CRM</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(120,120,120,.1);color:var(--text-muted)">B2B</span></div>
     </div>
     <div style="padding:2rem 0 1rem;max-width:100%">
-      <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">What Makes a Good HubSpot Dashboard Template?</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7">HubSpot templates should connect marketing, sales, and CRM data in one place. Key metrics include MQLs, SQLs, pipeline value, close rate, cost per lead by source, email open/click rates, and revenue attribution by channel. The most powerful templates blend HubSpot with Google Ads and Facebook Ads to show which paid campaigns generate leads that actually close — not just click.</p>
+      <h2 style="font-family:var(--font-mono);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">What Makes a Good HubSpot Dashboard Template?</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8">HubSpot templates should connect marketing, sales, and CRM data in one place. Key metrics include MQLs, SQLs, pipeline value, close rate, cost per lead by source, email open/click rates, and revenue attribution by channel. The most powerful templates blend HubSpot with Google Ads and Facebook Ads to show which paid campaigns generate leads that actually close — not just click.</p>
     </div>
     <div style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;color:var(--text-dim);text-transform:uppercase;letter-spacing:.1em;padding:.5rem 0 1rem;border-bottom:1px solid var(--border);margin-bottom:1.5rem">6 Templates · Sorted by Usefulness</div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:3rem">
@@ -228,15 +234,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(255,181,71,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#ffb547;flex-shrink:0">SM</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">HubSpot Marketing Analytics Report</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Supermetrics</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">HubSpot Marketing Analytics Report</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Supermetrics</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Campaign performance, traffic sources, lead generation, and email metrics from HubSpot Marketing Hub. Tracks contacts, MQLs, SQLs, and conversion rates through the funnel. Requires Supermetrics connector.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Marketing Hub</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Funnel</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">MQL/SQL</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Campaign performance, traffic sources, lead generation, and email metrics from HubSpot Marketing Hub. Tracks contacts, MQLs, SQLs, and conversion rates through the funnel. Requires Supermetrics connector.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Marketing Hub</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Funnel</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">MQL/SQL</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://portermetrics.com/en/templates/hubspot/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -246,15 +252,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(0,229,160,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:var(--green);flex-shrink:0">PM</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">HubSpot CRM & B2B Funnel Dashboard</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Porter Metrics</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">HubSpot CRM & B2B Funnel Dashboard</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Porter Metrics</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">B2B reporting template that combines HubSpot CRM data with paid media — track leads, deals, revenue, and cost per acquisition across channels. Segment by stage, source, rep, and industry.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">CRM</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">B2B</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Revenue</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">B2B reporting template that combines HubSpot CRM data with paid media — track leads, deals, revenue, and cost per acquisition across channels. Segment by stage, source, rep, and industry.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">CRM</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">B2B</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Revenue</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://blog.coupler.io/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -262,17 +268,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem">
           <div style="display:flex;align-items:center;gap:.6rem">
-            <div style="width:32px;height:32px;border-radius:7px;background:rgba(66,133,244,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#4285f4;flex-shrink:0">LS</div>
+            <div style="width:32px;height:32px;border-radius:7px;background:rgba(66,133,244,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.65rem;font-weight:700;color:#4285f4;flex-shrink:0">LS</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">HubSpot Sales Pipeline Dashboard</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">HubSpot Sales Pipeline Dashboard</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Tracks deals, pipeline value, close rates, win/loss analysis, and sales rep performance from HubSpot CRM. Filter by rep, deal stage, close date, and source. Auto-refreshes via Coupler.io.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Sales CRM</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Pipeline</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Win rate</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Tracks deals, pipeline value, close rates, win/loss analysis, and sales rep performance from HubSpot CRM. Filter by rep, deal stage, close date, and source. Auto-refreshes via Coupler.io.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Sales CRM</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Pipeline</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Win rate</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://www.catchr.io/template/looker-studio-templates/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -282,15 +288,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(180,100,255,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#b464ff;flex-shrink:0">CA</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">HubSpot Email Marketing Dashboard</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Catchr</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">HubSpot Email Marketing Dashboard</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Catchr</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">HubSpot email campaign metrics in Looker Studio — open rate, click rate, unsubscribes, and deliverability trends. Identify best-performing sends and segment by list or campaign type.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Email marketing</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Open rate</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">HubSpot email campaign metrics in Looker Studio — open rate, click rate, unsubscribes, and deliverability trends. Identify best-performing sends and segment by list or campaign type.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Email marketing</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Open rate</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://portermetrics.com/en/templates/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -300,15 +306,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(0,229,160,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:var(--green);flex-shrink:0">PM</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">HubSpot + Google Ads Attribution Report</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Porter Metrics</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">HubSpot + Google Ads Attribution Report</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Porter Metrics</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Connects HubSpot CRM data with Google Ads to show which campaigns generate leads that actually close into revenue. Full-funnel attribution from first click to closed-won deal.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Attribution</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Revenue attribution</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">CRM + Ads</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Connects HubSpot CRM data with Google Ads to show which campaigns generate leads that actually close into revenue. Full-funnel attribution from first click to closed-won deal.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Attribution</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Revenue attribution</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">CRM + Ads</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://www.databloo.com/templates/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -318,23 +324,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(255,181,71,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:var(--amber);flex-shrink:0">DB</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">HubSpot Inbound Marketing Report</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Data Bloo</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">HubSpot Inbound Marketing Report</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Data Bloo</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(255,181,71,.12);color:var(--amber);white-space:nowrap;flex-shrink:0">Paid</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(255,181,71,.12);color:var(--amber);white-space:nowrap;flex-shrink:0">Paid</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Multi-page premium template covering HubSpot Marketing Hub metrics: blog traffic, landing page conversion rates, email performance, and social media reach. Clean one-click setup.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Inbound</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Landing pages</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Blog</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--amber);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Multi-page premium template covering HubSpot Marketing Hub metrics: blog traffic, landing page conversion rates, email performance, and social media reach. Clean one-click setup.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Inbound</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Landing pages</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Blog</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--amber);margin-top:.3rem">View template →</div>
       </a>
     </div>
     <div style="max-width:100%;padding-bottom:4rem">
-      <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">HubSpot Native Reporting vs Looker Studio</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem">HubSpot's built-in reports are excellent for marketing attribution within HubSpot — but they can't easily blend in external ad platform data. If your team uses Google Ads, Facebook Ads, or LinkedIn alongside HubSpot, Looker Studio templates give you a unified view that HubSpot alone can't provide.</p>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1.5rem">HubSpot does not have a native Looker Studio connector. All templates below require a third-party connector (Supermetrics, Porter, Catchr, or Coupler.io). Most charge $15–50/month after a 14-day free trial.</p>
+      <h2 style="font-family:var(--font-mono);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">HubSpot Native Reporting vs Looker Studio</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1rem">HubSpot's built-in reports are excellent for marketing attribution within HubSpot — but they can't easily blend in external ad platform data. If your team uses Google Ads, Facebook Ads, or LinkedIn alongside HubSpot, Looker Studio templates give you a unified view that HubSpot alone can't provide.</p>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1.5rem">HubSpot does not have a native Looker Studio connector. All templates below require a third-party connector (Supermetrics, Porter, Catchr, or Coupler.io). Most charge $15–50/month after a 14-day free trial.</p>
       <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin:1.75rem 0 .65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Want Fully Automated HubSpot Reporting?</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem">Templates are a great start — but if you need scheduled PDF delivery, white-labeling, and zero maintenance, consider a dedicated reporting tool:</p>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1rem">Templates are a great start — but if you need scheduled PDF delivery, white-labeling, and zero maintenance, consider a dedicated reporting tool:</p>
       <div style="display:flex;gap:1rem;flex-wrap:wrap">
         <a href="https://whatagraph.com/?fpr=marketingreports" class="affiliate-cta" target="_blank" rel="noopener nofollow" style="font-size:.65rem;padding:.45rem .9rem">Try Whatagraph →</a>
         <a href="https://databox.com/?utm_source=marketingreports" class="affiliate-cta" target="_blank" rel="noopener nofollow" style="font-size:.65rem;padding:.45rem .9rem;background:var(--bg-elevated);color:var(--text);box-shadow:none;border:1px solid var(--border)">Try Databox →</a>

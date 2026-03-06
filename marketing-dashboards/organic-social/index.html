@@ -190,6 +190,12 @@ a:hover{opacity:.8}
 
 /* PAGE CONTENT AREAS */
 .page-content{display:none}.page-content.active{display:block}
+
+.breadcrumb{display:flex;align-items:center;gap:.4rem;font-family:var(--font-mono);font-size:.7rem;color:var(--text-dim);padding:1.2rem 0 .5rem;flex-wrap:wrap}
+.breadcrumb a{color:var(--text-dim);text-decoration:none;transition:color .15s}
+.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb-sep{color:var(--text-dim);opacity:.4}
+.breadcrumb-current{color:var(--text-muted)}
 </style>
 </head>
 <body>
@@ -215,8 +221,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div style="display:flex;gap:.5rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(0,212,255,.1);color:var(--accent)">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green)">Free Templates</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(225,48,108,.1);color:#e1306c;background:rgba(225,48,108">Instagram</span><span style="font-family:var(--font-mono);font-size:.6rem;font-weight:700;padding:.25rem .6rem;border-radius:3px;background:rgba(120,120,120,.1);color:var(--text-muted)">Multi-platform</span></div>
     </div>
     <div style="padding:2rem 0 1rem;max-width:100%">
-      <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">What Makes a Good Social Media Dashboard Template?</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7">The best organic social templates track reach, impressions, engagement rate, follower growth, top-performing posts, and video views across platforms. The most useful templates also blend social data with GA4 to show which platforms actually drive website traffic and conversions — not just vanity metrics.</p>
+      <h2 style="font-family:var(--font-mono);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">What Makes a Good Social Media Dashboard Template?</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8">The best organic social templates track reach, impressions, engagement rate, follower growth, top-performing posts, and video views across platforms. The most useful templates also blend social data with GA4 to show which platforms actually drive website traffic and conversions — not just vanity metrics.</p>
     </div>
     <div style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;color:var(--text-dim);text-transform:uppercase;letter-spacing:.1em;padding:.5rem 0 1rem;border-bottom:1px solid var(--border);margin-bottom:1.5rem">4 Templates · Sorted by Usefulness</div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:3rem">
@@ -228,15 +234,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(24,119,242,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#1877f2;flex-shrink:0">LS</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">All-in-One Social Media Analytics Dashboard</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">All-in-One Social Media Analytics Dashboard</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Coupler.io</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Centralizes Facebook, Instagram, LinkedIn, and YouTube organic data in one Looker Studio report. Integrates with GA4 to show which social channels drive website traffic and revenue. Auto-refreshes on a custom schedule.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Multi-platform</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">GA4 + Social</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Centralizes Facebook, Instagram, LinkedIn, and YouTube organic data in one Looker Studio report. Integrates with GA4 to show which social channels drive website traffic and revenue. Auto-refreshes on a custom schedule.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Multi-platform</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">GA4 + Social</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://supermetrics.com/template-gallery/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -246,15 +252,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(255,181,71,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#ffb547;flex-shrink:0">SM</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Organic Social Media Report</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Supermetrics</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Organic Social Media Report</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Supermetrics</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free*</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Tracks organic reach, impressions, engagement rate, follower growth, and top posts across Facebook, Instagram, LinkedIn, and Twitter/X. Compare channel performance side by side.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Multi-platform</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Engagement</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Tracks organic reach, impressions, engagement rate, follower growth, and top posts across Facebook, Instagram, LinkedIn, and Twitter/X. Compare channel performance side by side.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Multi-platform</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Engagement</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
       <a href="https://portermetrics.com/en/templates/social-media/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -264,15 +270,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(0,229,160,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:var(--green);flex-shrink:0">PM</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Social Media Performance Templates (40+)</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Porter Metrics</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Social Media Performance Templates (40+)</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Porter Metrics</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">40+ free white-label social media templates: Instagram Insights, Facebook Insights, LinkedIn Pages, YouTube, TikTok, and cross-platform comparison views. All white-label and downloadable free.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Instagram</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">YouTube</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">TikTok</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">White-label</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View templates →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">40+ free white-label social media templates: Instagram Insights, Facebook Insights, LinkedIn Pages, YouTube, TikTok, and cross-platform comparison views. All white-label and downloadable free.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Instagram</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">YouTube</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">TikTok</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">White-label</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View templates →</div>
       </a>
       <a href="https://www.databloo.com/connectors/instagram-insights/" target="_blank" rel="noopener" style="background:var(--bg-card);padding:1.4rem;display:flex;flex-direction:column;gap:.65rem;text-decoration:none;transition:background .15s" onmouseover="this.style.background='var(--bg-elevated)'" onmouseout="this.style.background='var(--bg-card)'">
         <div style="width:100%;height:140px;background:var(--bg-elevated);border-radius:6px;overflow:hidden;margin-bottom:-.1rem;position:relative">
@@ -282,23 +288,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display:flex;align-items:center;gap:.6rem">
             <div style="width:32px;height:32px;border-radius:7px;background:rgba(180,100,255,.15);display:grid;place-items:center;font-family:var(--font-mono);font-size:.55rem;font-weight:700;color:#b464ff;flex-shrink:0">DB</div>
             <div>
-              <div style="font-size:.9rem;font-weight:600;color:var(--text);line-height:1.2">Instagram Insights Report (Free Connector)</div>
-              <div style="font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.1rem">Data Bloo</div>
+              <div style="font-size:1.05rem;font-weight:600;color:var(--text);line-height:1.25">Instagram Insights Report (Free Connector)</div>
+              <div style="font-family:var(--font-mono);font-size:.72rem;color:var(--text-dim);margin-top:.1rem">Data Bloo</div>
             </div>
           </div>
-          <span style="font-family:var(--font-mono);font-size:.55rem;font-weight:700;padding:.2rem .45rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
+          <span style="font-family:var(--font-mono);font-size:.65rem;font-weight:700;padding:.25rem .55rem;border-radius:3px;background:rgba(0,229,160,.1);color:var(--green);white-space:nowrap;flex-shrink:0">Free</span>
         </div>
-        <p style="font-size:.8rem;color:var(--text-muted);line-height:1.55">Data Bloo offers a free Instagram Insights connector for Looker Studio — one of the only genuinely free options for Instagram organic data. Tracks reach, impressions, engagement, and follower growth.</p>
-        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Instagram</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Free connector</span><span style="font-family:var(--font-mono);font-size:.55rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.1rem .35rem;border-radius:3px">Organic</span></div>
-        <div style="font-family:var(--font-mono);font-size:.6rem;color:var(--accent);margin-top:.2rem">View template →</div>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.65">Data Bloo offers a free Instagram Insights connector for Looker Studio — one of the only genuinely free options for Instagram organic data. Tracks reach, impressions, engagement, and follower growth.</p>
+        <div style="display:flex;gap:.4rem;flex-wrap:wrap"><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Looker Studio</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Instagram</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Free connector</span><span style="font-family:var(--font-mono);font-size:.65rem;color:var(--text-dim);background:var(--bg-elevated);border:1px solid var(--border);padding:.2rem .45rem;border-radius:3px">Organic</span></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--accent);margin-top:.3rem">View template →</div>
       </a>
     </div>
     <div style="max-width:100%;padding-bottom:4rem">
-      <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Free vs Paid Connectors for Organic Social</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem">Instagram, Facebook Pages, and LinkedIn Pages all block native Looker Studio connections — you need a third-party connector. Data Bloo offers some genuinely free connectors (Instagram Insights, LinkedIn Pages). Porter Metrics, Coupler.io, and Supermetrics have free trials then charge $15–50/month.</p>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1.5rem">If you only need one platform, start with a free connector from Data Bloo. For multi-platform reporting or agency use, a paid connector that covers all channels is worth the monthly cost.</p>
+      <h2 style="font-family:var(--font-mono);font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Free vs Paid Connectors for Organic Social</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1rem">Instagram, Facebook Pages, and LinkedIn Pages all block native Looker Studio connections — you need a third-party connector. Data Bloo offers some genuinely free connectors (Instagram Insights, LinkedIn Pages). Porter Metrics, Coupler.io, and Supermetrics have free trials then charge $15–50/month.</p>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1.5rem">If you only need one platform, start with a free connector from Data Bloo. For multi-platform reporting or agency use, a paid connector that covers all channels is worth the monthly cost.</p>
       <h2 style="font-family:var(--font-mono);font-size:.95rem;font-weight:700;color:var(--text);margin:1.75rem 0 .65rem;padding-left:.8rem;border-left:3px solid var(--accent);letter-spacing:-0.01em">Want Fully Automated Organic Social Reporting?</h2>
-      <p style="color:var(--text-muted);font-size:.88rem;line-height:1.7;margin-bottom:1rem">Templates are a great start — but if you need scheduled PDF delivery, white-labeling, and zero maintenance, consider a dedicated reporting tool:</p>
+      <p style="color:var(--text-muted);font-size:1.05rem;line-height:1.8;margin-bottom:1rem">Templates are a great start — but if you need scheduled PDF delivery, white-labeling, and zero maintenance, consider a dedicated reporting tool:</p>
       <div style="display:flex;gap:1rem;flex-wrap:wrap">
         <a href="https://whatagraph.com/?fpr=marketingreports" class="affiliate-cta" target="_blank" rel="noopener nofollow" style="font-size:.65rem;padding:.45rem .9rem">Try Whatagraph →</a>
         <a href="https://databox.com/?utm_source=marketingreports" class="affiliate-cta" target="_blank" rel="noopener nofollow" style="font-size:.65rem;padding:.45rem .9rem;background:var(--bg-elevated);color:var(--text);box-shadow:none;border:1px solid var(--border)">Try Databox →</a>
