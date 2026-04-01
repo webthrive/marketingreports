@@ -109,11 +109,9 @@ a:hover{opacity:.8}
 .article-body li strong{color:var(--text)}
 .author-box{display:flex;gap:1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;margin:2rem 0}
 .author-avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--green));display:grid;place-items:center;font-family:var(--font-mono);font-size:.85rem;font-weight:700;color:#000;flex-shrink:0}
-.author-meta{flex:1}
 .author-name{font-family:var(--font-mono);font-size:.8rem;font-weight:700;color:var(--text);margin-bottom:.1rem}
 .author-title{font-family:var(--font-mono);font-size:.6rem;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.4rem}
 .author-bio{font-size:.82rem;color:var(--text-muted);line-height:1.6;margin:0}
-.author-updated{font-family:var(--font-mono);font-size:.58rem;color:var(--text-dim);margin-top:.5rem}
 .tldr-box{background:var(--bg-card);border:1px solid rgba(0,212,255,.25);border-radius:var(--radius-lg);padding:1.25rem 1.5rem;margin:1.5rem 0 2rem}
 .tldr-label{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-family:var(--font-mono);margin-bottom:.65rem}
 .tldr-box ul{list-style:none;display:flex;flex-direction:column;gap:.4rem;padding:0}
@@ -467,49 +465,51 @@ html,body{overflow-x:hidden;max-width:100%}
     </ul>
     <p>The direction is clear: Google is gradually moving useful features from Pro to free (like the CSV improvements) while cementing higher-value automation and collaboration features in the paid tier. The pace of updates has picked up noticeably since late 2025, which suggests this product is getting real engineering attention rather than maintenance-mode treatment.</p>
 
-    <h2>Featured Dashboard Templates</h2>
+    <h2>Featured Looker Studio Dashboard Templates</h2>
+
+    <p>Looker Studio's template gallery hosts hundreds of free, copy-and-use dashboards. Here are six of the most-used marketing templates — all free, all native Google connectors where available:</p>
 
     <div class="dash-grid">
-      <a href="/marketing-dashboards/google-ads/" class="dash-card">
+      <a href="https://lookerstudio.google.com/reporting/1cde4826-a784-41aa-b898-d41b74b2cce7/page/rGqUB" class="dash-card" target="_blank" rel="noopener nofollow">
         <div class="dash-card-thumb">Google Ads</div>
-        <h4>Google Ads Performance</h4>
-        <p>Campaign cost, CPC, conversions, and ROAS in one live view.</p>
+        <h4>Google Ads Performance Report</h4>
+        <p>Campaign cost, CPC, conversions, and ROAS — native Google Ads connector, no setup required.</p>
         <span class="dash-card-tag">Paid Search</span>
       </a>
-      <a href="/marketing-dashboards/google-search-console/" class="dash-card">
+      <a href="https://lookerstudio.google.com/reporting/1cde4826-a784-41aa-b898-d41b74b2cce7" class="dash-card" target="_blank" rel="noopener nofollow">
+        <div class="dash-card-thumb">GA4 Traffic</div>
+        <h4>GA4 Website Traffic Overview</h4>
+        <p>Sessions, users, bounce rate, and acquisition channels — direct native GA4 connection, instantly copy-able.</p>
+        <span class="dash-card-tag">Web Analytics</span>
+      </a>
+      <a href="https://lookerstudio.google.com/u/0/reporting/new?ds=ssc" class="dash-card" target="_blank" rel="noopener nofollow">
         <div class="dash-card-thumb">Search Console</div>
-        <h4>Search Console Overview</h4>
-        <p>Clicks, impressions, CTR, and average position by query and page.</p>
-        <span class="dash-card-tag">SEO / Organic</span>
+        <h4>Search Console SEO Dashboard</h4>
+        <p>Clicks, impressions, CTR, and average position by query and page — native Search Console connector.</p>
+        <span class="dash-card-tag">SEO</span>
       </a>
-      <a href="/marketing-dashboards/facebook-ads/" class="dash-card">
-        <div class="dash-card-thumb">Facebook Ads</div>
-        <h4>Facebook Ads Dashboard</h4>
-        <p>Spend, reach, CPM, and ROAS &mdash; requires connector for Looker Studio.</p>
+      <a href="https://lookerstudio.google.com/gallery" class="dash-card" target="_blank" rel="noopener nofollow">
+        <div class="dash-card-thumb">Template Gallery</div>
+        <h4>Looker Studio Template Gallery</h4>
+        <p>Browse hundreds of free community and Google-built templates across marketing, sales, and analytics use cases.</p>
+        <span class="dash-card-tag">All Channels</span>
+      </a>
+      <a href="https://supermetrics.com/template-gallery/looker-studio-facebook-instagram-ads" class="dash-card" target="_blank" rel="noopener nofollow">
+        <div class="dash-card-thumb">Meta Ads</div>
+        <h4>Facebook &amp; Instagram Ads Report</h4>
+        <p>Meta Ads in Looker Studio via Supermetrics connector — spend, reach, and audience breakdown by platform.</p>
         <span class="dash-card-tag">Paid Social</span>
       </a>
-      <a href="/marketing-dashboards/linkedin-ads/" class="dash-card">
-        <div class="dash-card-thumb">LinkedIn Ads</div>
-        <h4>LinkedIn Ads Report</h4>
-        <p>Cost per lead, impressions, and conversion tracking for B2B campaigns.</p>
-        <span class="dash-card-tag">Paid Social</span>
-      </a>
-      <a href="/marketing-dashboards/shopify/" class="dash-card">
-        <div class="dash-card-thumb">Shopify</div>
-        <h4>Shopify Revenue Dashboard</h4>
-        <p>Orders, revenue, AOV, and top products connected to your store data.</p>
-        <span class="dash-card-tag">Ecommerce</span>
-      </a>
-      <a href="/marketing-dashboards/email-marketing/" class="dash-card">
-        <div class="dash-card-thumb">Email</div>
-        <h4>Email Marketing Report</h4>
-        <p>Open rates, click rates, revenue per email, and list growth over time.</p>
-        <span class="dash-card-tag">Email</span>
+      <a href="https://supermetrics.com/template-gallery/looker-studio-google-ads-performance-dashboard" class="dash-card" target="_blank" rel="noopener nofollow">
+        <div class="dash-card-thumb">Cross-Channel</div>
+        <h4>Google Ads + GA4 Attribution</h4>
+        <p>Paid search spend blended with GA4 session and conversion data — cross-channel attribution in one Looker Studio view.</p>
+        <span class="dash-card-tag">Attribution</span>
       </a>
     </div>
 
     <div style="text-align:center;margin:1.5rem 0">
-      <a href="https://lookerstudio.google.com/" class="affiliate-cta" target="_blank" rel="noopener">Build Your First Dashboard Free &rarr;</a>
+      <a href="https://lookerstudio.google.com/gallery" class="affiliate-cta" target="_blank" rel="noopener">Browse All Free Templates &rarr;</a>
     </div>
 
     <h2>Frequently Asked Questions</h2>
@@ -564,12 +564,11 @@ html,body{overflow-x:hidden;max-width:100%}
 
 
     <div class="author-box">
-      <div class="author-avatar">CC</div>
-      <div class="author-meta">
-        <div class="author-name"><a href="https://www.webthrive.io/home/" rel="noopener" style="color:var(--text)">Colin H</a></div>
-        <div class="author-title">Marketing Analytics &amp; GTM Strategy</div>
-        <p class="author-bio">I&rsquo;ve been building marketing dashboards and evaluating reporting tools since before Google Data Studio got its current name. I&rsquo;ve set up Looker Studio for small internal teams, helped agencies figure out where it breaks, and watched the Pro upgrade evolve from vague promise to something that actually makes sense in specific situations.</p>
-        <div class="author-updated">Last updated: March 2026</div>
+      <div class="author-avatar">C</div>
+      <div class="author-info">
+        <div class="author-name"><a href="https://www.webthrive.io/home/" target="_blank" rel="noopener">Colin</a></div>
+        <div class="author-title">Founder, MarketingReports.io · Marketing Analytics &amp; GTM Strategy</div>
+        <div class="author-bio">I've been building marketing dashboards and evaluating reporting tools since before Google Data Studio got its current name. I've set up Looker Studio for small internal teams, helped agencies figure out where it breaks, and watched the Pro upgrade evolve from vague promise to something that actually makes sense in specific situations. Last updated March 2026.</div>
       </div>
     </div>
 
