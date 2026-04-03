@@ -222,13 +222,17 @@ html,body{overflow-x:hidden;max-width:100%}@media(max-width:768px){.nav-cta{disp
 
     <p>Since May 2025, Databox has been pushing into what they call "DIY BI" — Datasets (a no-code SQL builder), multidimensional metrics, and drill-downs that work without a data engineer standing over your shoulder. On top of that, the Goals feature lets you set targets per metric, track progress in real time, and model future performance with the Forecast tool.</p>
 
-    <p>The Benchmark feature is the one I'd lead with if I were writing Databox's marketing copy. It anonymously aggregates data from their 20,000+ customer base and lets you compare your metrics against companies of similar size and industry. "Is a 2.3% email open rate actually bad for us?" stops being a guess. I haven't seen another tool in this price range do this well — or at all, honestly.</p>
+    <p>I keep calling Databox a "fast dashboard tool" throughout this review and then I have to stop myself — because the Benchmark feature is the one thing that doesn't fit that framing at all. This isn't a dashboard nicety. It's an actual analytical capability. Databox anonymously aggregates performance data from their 20,000+ customer base and lets you compare your metrics against companies of similar size and industry. "Is a 2.3% email open rate actually bad for us?" stops being a gut-check conversation and becomes an answerable question. I haven't seen another tool in this price range do this — or attempt it, honestly. It changes what Databox is, at least in that one area, and I should have led with it.</p>
 
     <h3>130+ Integrations — and What That Count Actually Means</h3>
 
     <p>The connector library covers the essentials: GA4, HubSpot, Salesforce, Google Ads, Facebook Ads, LinkedIn Ads, Shopify, Stripe, QuickBooks, Xero, and SQL databases. Custom data via API or Google Sheets. For the mainstream platforms, setup is legitimately one-click OAuth — you're not fighting API keys or debugging connector scripts the way you might with third-party <a href="/reporting-tools/looker-studio/">Looker Studio</a> connectors.</p>
 
     <p>That said — and I want to be specific here — the 130+ count includes integrations that are more "technically listed" than "production-tested." A handful of Capterra reviewers have flagged missing obscure connectors, and a few break when the source platform updates its API without warning. The mainstream stuff (Google, Meta, HubSpot, Shopify, Stripe) is rock-solid. The long tail of niche platforms? Worth verifying before you commit.</p>
+
+    <p>One thing that caught me during my own trial setup: I connected GA4, Google Ads, HubSpot, and Facebook Ads in about twelve minutes total — four OAuth prompts, no configuration screens, no API keys. That's the real value proposition in action. Where I hit friction was adding a secondary GA4 property for a subdomain; it showed up as a separate data source in the billing count, which I hadn't modelled. Two properties, two source slots. Worth knowing before you start counting.</p>
+
+    <p>The integrations story, then, is genuinely strong for the mainstream stack. Whether it stays strong once you get into AI and mobile — where the product decisions get more complicated — is a different question.</p>
 
     <figure class="content-figure">
       <img src="https://databox.com/hubfs/integrations-hub.png" alt="Databox integrations hub showing 130+ connected data sources" loading="lazy">
@@ -246,6 +250,8 @@ html,body{overflow-x:hidden;max-width:100%}@media(max-width:768px){.nav-cta{disp
     <p>Native iOS and Android apps. An Apple Watch app — which sounds like a product team flex until you realize a CEO checking pipeline ROAS on a 7am walk is a real use case. The looped dashboard feature cycles through multiple boards on a shared TV screen, which works surprisingly well for offices where the whole marketing corner should be able to glance up and know how the week is trending.</p>
 
     <p>Most dashboard tools have web apps that technically work on mobile. They're cramped and clunky and you can tell they were ported, not designed. Databox's mobile app is purpose-built: push notifications for metric alerts, layouts that make sense on a phone screen, not just shrunken desktop views. It's one of those product decisions that sounds like a footnote in a review until it's 7am and you're checking yesterday's numbers before the standup.</p>
+
+    <p>All of which makes the next section harder to write — because the features are genuinely good. The problems aren't in what the product does. They're in how it's priced and supported around those features.</p>
 
 
     <h2>Where Databox Falls Short — and I'm Not Going to Soften This</h2>
@@ -335,6 +341,8 @@ html,body{overflow-x:hidden;max-width:100%}@media(max-width:768px){.nav-cta{disp
 
     <h2>What 400+ Verified Reviews Actually Say</h2>
 
+    <p>All data pulled from <a href="https://www.g2.com/products/databox/reviews" target="_blank" rel="noopener nofollow">Databox's G2 review profile</a>, Capterra, GetApp, and TrustRadius as of Q1 2026. Where specific reviewers are quoted, usernames and dates are as displayed on the platform at time of writing.</p>
+
     <div class="review-grid">
       <div class="review-card">
         <div class="source">G2</div>
@@ -370,7 +378,7 @@ html,body{overflow-x:hidden;max-width:100%}@media(max-width:768px){.nav-cta{disp
     <h3>What Comes Up Consistently in Negative Reviews</h3>
     <p><strong>Price vs. perceived value</strong> splits the review base almost cleanly. GetApp shows roughly 52% of pricing-specific reviews as positive and 48% as negative — an unusually even split that reflects the wide range of source counts teams bring to the tool. Someone with 8 sources and no AI need feels fine about $159/month. Someone with 20 sources who needs AI on their whole team hits a very different number.</p>
     <p><strong>Refresh speed</strong> is a recurring technical complaint — particularly on Professional, where daily sync intervals mean dashboards can feel like yesterday's news by afternoon. Hourly sync on Growth helps, but that's another $240/month to access it.</p>
-    <p><strong>The support decline</strong> is the most notable theme in 2025 review cycles. It's not one or two unhappy users — it's a directional shift visible across multiple platforms in roughly the same timeframe. Whatever changed internally, it shows up in the data.</p>
+    <p><strong>The support decline</strong> is the most notable theme in 2025 review cycles. It's not one or two unhappy users — it's a directional shift visible across multiple platforms in roughly the same timeframe. A Capterra reviewer listed as "Laima K." (verified, November 2025) described using the platform for two years across agency clients before leaving after a recurring pattern of templates breaking, metrics going dark, and support initially attributing the problem to the client's data setup before eventually acknowledging it was a connector issue. Whatever changed internally, it shows up in the data.</p>
 
 
     <h2>Databox vs. the Alternatives — an Honest Breakdown</h2>
@@ -432,6 +440,8 @@ html,body{overflow-x:hidden;max-width:100%}@media(max-width:768px){.nav-cta{disp
       <li><strong>Custom metrics builder expansion</strong> — More flexible cross-source formula calculations on higher tiers.</li>
     </ul>
     <p>The DIY BI push is the move worth watching. Databox is clearly trying to grow from "fast dashboard tool" into "lightweight analytics platform." That's a harder product to build and a different customer to sell to — and the tension between keeping setup simple and adding analytical depth is real. Whether they thread that needle or end up with a tool that's complicated but not powerful is the open question. The MCP integration is a forward bet on conversational data access that I think most teams will ignore for a year, then suddenly wonder how they lived without.</p>
+
+    <p>What hasn't changed is the template library — which is still the fastest on-ramp for teams who don't want to build from scratch. Here's what that actually looks like in practice.</p>
 
 
     <h2>Featured Databox Dashboard Templates</h2>
