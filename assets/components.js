@@ -31,12 +31,12 @@
     @media(max-width:900px){.footer-inner{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}}
     @media(max-width:600px){.footer-inner{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:.5rem;text-align:center}}
     /* Author box — blog posts only */
-    .mr-author-box{display:flex;align-items:flex-start;gap:1.25rem;background:var(--bg-card,#10141d);border:1px solid var(--border,#1e2535);border-radius:12px;padding:1.5rem;margin:3rem auto 0;max-width:760px;padding-left:2rem;padding-right:2rem;box-sizing:border-box}
-    .mr-author-avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--accent,#00d4ff),var(--green,#00e5a0));display:grid;place-items:center;font-family:var(--font-mono,'Space Grotesk',sans-serif);font-weight:700;font-size:.95rem;color:#000;flex-shrink:0}
-    .mr-author-name{font-family:var(--font-mono,'Space Grotesk',sans-serif);font-weight:700;font-size:.9rem;color:var(--text,#e2e8f0);margin-bottom:.2rem}
+    .mr-author-box{display:flex;align-items:flex-start;gap:1.25rem;background:var(--bg-card,#10141d);border:1px solid var(--border,#1e2535);border-radius:12px;padding:1.5rem 2rem;margin:3rem auto 3rem;max-width:760px;box-sizing:border-box}
+    .mr-author-avatar{width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;display:block}
+    .mr-author-name{font-family:var(--font-mono,'Space Grotesk',sans-serif);font-weight:700;font-size:.9rem;color:var(--text,#e2e8f0);margin-bottom:.25rem}
     .mr-author-name a{color:inherit;text-decoration:none}
     .mr-author-name a:hover{color:var(--accent,#00d4ff);opacity:1}
-    .mr-author-title{font-size:.78rem;color:var(--text-muted,#8c9ab0);margin-bottom:.6rem}
+    .mr-author-role{font-size:.78rem;color:var(--text-muted,#8c9ab0);margin-bottom:.55rem}
     .mr-author-bio{font-size:.83rem;color:var(--text-muted,#8c9ab0);line-height:1.65;margin:0}
     .mr-author-bio a{color:var(--accent,#00d4ff)}
     @media(max-width:600px){.mr-author-box{flex-direction:column;gap:.75rem}}
@@ -104,9 +104,10 @@
   /* ─── Author box — blog posts only ─── */
   const authorBox = `
 <div class="mr-author-box" id="mr-author-box">
-  <div class="mr-author-avatar">CH</div>
+  <img class="mr-author-avatar" src="https://media.licdn.com/dms/image/v2/C5603AQESopoE9DhzWA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1601241079323?e=1778716800&v=beta&t=OWBYjWupwBmaIZRVVJ0MMUucj5q6mqoWOYb8GQKDV34" alt="Colin H" width="52" height="52">
   <div>
-    <div class="mr-author-name"><a href="https://www.webthrive.io/home/" rel="noopener">Colin H</a> · <span class="mr-author-title" style="display:inline;margin:0">WebThrive.io · Digital Strategy &amp; Marketing Analytics</span></div>
+    <div class="mr-author-name"><a href="https://www.webthrive.io/home/" rel="noopener">Colin H</a></div>
+    <div class="mr-author-role">Digital Strategy &amp; Marketing Analytics</div>
     <p class="mr-author-bio">A decade in go-to-market strategy and campaign analytics. <a href="https://marketingreports.io" rel="noopener">MarketingReports.io</a> exists to stay ahead of the reporting tools and platforms shaping how marketers measure what matters.</p>
   </div>
 </div>`;
@@ -117,7 +118,6 @@
 
   // Author box: blog posts only (not the /blog/ index page)
   if (isBlogPost) {
-    // Insert before the site footer
     const footerEl = document.getElementById('mr-site-footer');
     if (footerEl) {
       footerEl.insertAdjacentHTML('beforebegin', authorBox);
