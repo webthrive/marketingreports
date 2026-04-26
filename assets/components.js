@@ -1,10 +1,12 @@
 (function () {
-  /* ─── Active nav detection ─── */
+  /* ─── Page type detection ─── */
   const path = window.location.pathname;
   const isDashboards = path.startsWith('/marketing-dashboards/');
   const isUpdates    = path.startsWith('/blog/');
+  // Blog post = /blog/ with at least one more path segment (not the index)
+  const isBlogPost   = /^\/blog\/[^/]+\/?$/.test(path);
 
-  /* ─── Inject header + footer CSS (scoped to avoid conflicts) ─── */
+  /* ─── CSS: header, footer, author box ─── */
   const css = `
     .site-header{position:sticky;top:0;z-index:100;background:rgba(11,14,20,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border,#1e2535)}
     .header-inner{max-width:1280px;margin:0 auto;padding:0 2rem;height:60px;display:flex;align-items:center;gap:2rem}
@@ -28,6 +30,16 @@
     .footer-bottom a:hover{color:var(--text-muted,#8c9ab0)}
     @media(max-width:900px){.footer-inner{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}}
     @media(max-width:600px){.footer-inner{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:.5rem;text-align:center}}
+    /* Author box — blog posts only */
+    .mr-author-box{display:flex;align-items:flex-start;gap:1.25rem;background:var(--bg-card,#10141d);border:1px solid var(--border,#1e2535);border-radius:12px;padding:1.5rem;margin:3rem auto 0;max-width:760px;padding-left:2rem;padding-right:2rem;box-sizing:border-box}
+    .mr-author-avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--accent,#00d4ff),var(--green,#00e5a0));display:grid;place-items:center;font-family:var(--font-mono,'Space Grotesk',sans-serif);font-weight:700;font-size:.95rem;color:#000;flex-shrink:0}
+    .mr-author-name{font-family:var(--font-mono,'Space Grotesk',sans-serif);font-weight:700;font-size:.9rem;color:var(--text,#e2e8f0);margin-bottom:.2rem}
+    .mr-author-name a{color:inherit;text-decoration:none}
+    .mr-author-name a:hover{color:var(--accent,#00d4ff);opacity:1}
+    .mr-author-title{font-size:.78rem;color:var(--text-muted,#8c9ab0);margin-bottom:.6rem}
+    .mr-author-bio{font-size:.83rem;color:var(--text-muted,#8c9ab0);line-height:1.65;margin:0}
+    .mr-author-bio a{color:var(--accent,#00d4ff)}
+    @media(max-width:600px){.mr-author-box{flex-direction:column;gap:.75rem}}
   `;
   const styleEl = document.createElement('style');
   styleEl.id = 'mr-components-css';
@@ -89,7 +101,28 @@
   </div>
 </footer>`;
 
+  /* ─── Author box — blog posts only ─── */
+  const authorBox = `
+<div class="mr-author-box" id="mr-author-box">
+  <div class="mr-author-avatar">CH</div>
+  <div>
+    <div class="mr-author-name"><a href="https://www.webthrive.io/home/" rel="noopener">Colin H</a> · <span class="mr-author-title" style="display:inline;margin:0">WebThrive.io · Digital Strategy &amp; Marketing Analytics</span></div>
+    <p class="mr-author-bio">A decade in go-to-market strategy and campaign analytics. <a href="https://marketingreports.io" rel="noopener">MarketingReports.io</a> exists to stay ahead of the reporting tools and platforms shaping how marketers measure what matters.</p>
+  </div>
+</div>`;
+
   /* ─── Inject into DOM ─── */
   document.body.insertAdjacentHTML('afterbegin', header);
   document.body.insertAdjacentHTML('beforeend', footer);
+
+  // Author box: blog posts only (not the /blog/ index page)
+  if (isBlogPost) {
+    // Insert before the site footer
+    const footerEl = document.getElementById('mr-site-footer');
+    if (footerEl) {
+      footerEl.insertAdjacentHTML('beforebegin', authorBox);
+    } else {
+      document.body.insertAdjacentHTML('beforeend', authorBox);
+    }
+  }
 })();
