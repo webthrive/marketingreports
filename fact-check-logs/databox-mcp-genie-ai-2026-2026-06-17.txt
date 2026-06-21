@@ -1,0 +1,97 @@
+FACT-CHECK CHANGELOG
+====================
+Page slug:    databox-mcp-genie-ai-2026
+URL:          https://marketingreports.io/blog/databox-mcp-genie-ai-2026/
+Audit date:   2026-06-17
+Auditor:      Web Thrive — Content Writer Agent (workflow: fact-check audit)
+Reviewer:     Human-approved 2026-06-21
+Corrections:  7 total
+Pushed:       2026-06-21
+Commit msg:   fact-check: correct 7 inaccurate claims on databox-mcp-genie-ai-2026 — see changelog 2026-06-17
+
+---
+
+CORRECTION #1 — JSON-LD Schema Fix
+Element:  JSON-LD datePublished
+Before:   "April 2, 2026"  (human-readable string)
+After:    "2026-04-02"  (ISO 8601)
+Reason:   schema.org Article spec requires ISO 8601 date format. Human-readable dates
+          fail Google Rich Results validation and suppress structured-data eligibility.
+
+---
+
+CORRECTION #2 — JSON-LD Schema Addition
+Element:  JSON-LD dateModified
+Before:   Field absent
+After:    "dateModified": "2026-06-17"
+Reason:   Absence of dateModified signals to search engines that content has never
+          been reviewed or updated. Required field for full rich-result eligibility.
+
+---
+
+CORRECTION #3 — JSON-LD Author Type Fix
+Element:  JSON-LD author
+Before:   { "@type": "Organization", "name": "MarketingReports.io", ... }
+After:    { "@type": "Person", "name": "Colin H", "url": "https://www.webthrive.io/home/" }
+Reason:   Organization as sole Article author suppresses Google rich results
+          eligibility. Site-wide standard is Person-type author attribution.
+
+---
+
+CORRECTION #4 — Content Correction: Whatagraph IQ Description
+Element:  Competitors paragraph — Whatagraph IQ section
+Before:   Characterised Whatagraph AI as "limited to within-platform output"
+After:    Accurately describes Whatagraph IQ: AI text summaries (multiple formats/
+          languages) plus data-query chatbot for users and clients. Repositions
+          Databox's genuine differentiator as MCP server extending data access
+          outside the platform entirely.
+Reason:   Original claim materially understated Whatagraph IQ capabilities.
+          Whatagraph IQ includes a full conversational query interface — not limited
+          to within-platform output as originally stated. Creates false competitive
+          picture and exposes site to accuracy challenge.
+
+---
+
+CORRECTION #5 — Unverifiable Attribution Softened
+Element:  "What to Watch" paragraph — Databox direct attribution
+Before:   "Databox said at the end of 2025 that 2026 would bring AI to the center
+          of their product"
+After:    "Databox has been signaling an AI-first product direction throughout 2025
+          and into 2026, and these two launches are the first concrete product
+          substance behind that intent."
+Reason:   No verifiable public source found for the specific attributed statement.
+          Unverified direct attribution creates accuracy and potential legal risk.
+          Replaced with defensible editorial observation preserving directional intent.
+
+---
+
+CORRECTION #6 — Material Omission: Genie Pricing Details
+Element:  Tier warning paragraph
+Before:   Vague warning: "worth checking which features are available at your tier"
+After:    Added: Genie is currently in early access and free to use on eligible plans;
+          Databox has indicated a credit-based model post-launch; all paid plans
+          except Agency Starter will receive a monthly credit allocation; exact
+          allocation and what counts against credits unconfirmed.
+Reason:   Material omission. Pricing model details (early access free tier, upcoming
+          credit system, Agency Starter exclusion) are directly material to readers
+          evaluating whether and when to adopt Genie. Omitting them understates the
+          information needed for an informed decision.
+
+---
+
+CORRECTION #7 — Affiliate Link Compliance Fix
+Element:  Affiliate CTA anchor rel attribute
+Before:   rel="noopener nofollow"
+After:    rel="noopener sponsored nofollow"
+Reason:   Google Webmaster Guidelines require "sponsored" rel value on paid/affiliate
+          links. Missing "sponsored" creates compliance exposure and potential manual
+          penalty risk. Site-wide affiliate link standard requires all three values.
+
+---
+
+ANNOTATION METHOD
+All 7 corrections carry <!-- FACT-CHECK CORRECTION: [reason] --> HTML comments
+immediately above the corrected element for diff traceability. JSON-LD corrections
+(#1–3) share a single comment block immediately before the <script type="application/ld+json">
+tag — JSON does not support inline comments and inline HTML comments would break
+structured-data parsing.
